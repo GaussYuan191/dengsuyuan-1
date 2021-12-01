@@ -5,7 +5,14 @@
     list-style: none;
     
 }
-
+@font-face {
+    font-family: PingFang SC;
+    src: url('../assets/font/PingFangSC.ttf');
+}
+@font-face {
+    font-family: PingFang-SC-Bold;
+    src: url('../assets/font/PingFang-SC-Bold.ttf');
+}
 a {
     text-decoration: none;
 }

@@ -165,23 +165,277 @@
 .list1 li:nth-child(2) {
     margin: 10px 0;
 }
-.list1-tag-iphone12promax {
-    width: 390px;
-    height: 172px;
+.list1-tag-iphone {
+    width: 420px;
+    height: 185px;
+    
+}
+.iphone12promax {
     margin-top: 216px;
     margin-left: 546px;
-    background-color: red;
-    text-align: center;
 }
-.list1-tag-iphone12promax p:nth-child(1) {
+.iphone12mini {
+    margin-top: 240px;
+    margin-left: 1010px;
+}
+.iphone12mini p:nth-child(1) {
+    margin-left: 66px;
+}
+.iphone12mini p:nth-child(2) {
+    margin-left: 52px;
+}
+.iphone12mini p:nth-child(4) {
+    margin-left: 44px;
+}
+.list1-tag-iphone p:nth-child(1) {
     height: 24px;
     font-size: 24px;
     font-family: Helvetica;
     font-weight: 400;
     color: #1D1D1F;
     line-height: 24px;
+    margin-bottom: 16px;
+}
+.iphone12promax p:nth-child(1) {
+    margin-left: 69px;
+    
+}
+.list1-tag-iphone p:nth-child(2) {
+    height: 50px;
+    font-size: 50px;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: #1D1D1F;
+    line-height: 50px;
+    margin-bottom: 19px;
+    
+}
+.iphone12promax p:nth-child(2) {
+    margin-left: 78px;
+    
+}
+.list1-tag-iphone p:nth-child(3) {
+    margin-bottom: 25px;
+}
+.list1-tag-iphone p:nth-child(3) span:nth-child(1) {
+
+    height: 26px;
+    font-size: 26px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #242220;
+    line-height: 26px;
+    margin-right: 10px;
+    
+}
+.list1-tag-iphone p:nth-child(3) span:nth-child(2) {
+
+    height: 28px;
+    font-size: 28px;
+    font-family: Helvetica;
+    font-weight: 400;
+    color: #1D1D1F;
+    line-height: 28px;
+    
+}
+.list1-tag-iphone p:nth-child(4) span:nth-child(1) {
+
+    height: 18px;
+    font-size: 18px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #1576EE;
+    line-height: 18px;
+    
+}
+.iphone12promax p:nth-child(4) {
+    margin-left: 70px;
+}
+.list1-tag-iphone p:nth-child(4) span:nth-child(2) {
+
+    height: 18px;
+    font-size: 18px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #1576EE;
+    line-height: 18px;
 }
 
+/* 第二部分商品 */
+.list2 {
+    /* width: 1920px; */
+    height: 1711px;
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;  
+    flex: 1;
+    
+}
+.list2 li:nth-child(1) {
+    margin-top: 10px;
+}
+.list2 li:nth-child(1) a {
+    width: 943px;
+    height: 557px;
+    display: block;
+    background: url("../assets/images/watch6.png");
+    /* background-color: red; */
+}
+
+.list2 li:nth-child(2) a {
+    width: 943px;
+    height: 557px;
+    display: block;
+    background: url("../assets/images/iPadAir.png");
+}
+
+.list2 li:nth-child(3) a {
+    width: 943px;
+    height: 557px;
+    display: block;
+    background: url("../assets/images/iPad.png");
+}
+
+.list2 li:nth-child(4) a {
+    width: 943px;
+    height: 557px;
+    display: block;
+    background: url("../assets/images/watchSE.png");
+}
+
+.list2 li:nth-child(5) a {
+    width: 943px;
+    height: 557px;
+    display: block;
+    background: url("../assets/images/AirPodsPro.png");
+}
+
+.list2 li:nth-child(6) a {
+    width: 943px;
+    height: 557px;
+    display: block;
+    background: url("../assets/images/AppStore.png");
+}
+
+/* 部位 */
+.footer {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding: 0 22px;
+}
+.footer_top{
+    width: 858px;
+    height: 391px;
+    padding-top: 21px;
+    margin: 0 auto; 
+}
+.footer_top ul {
+    width: 20%;
+    height: 286px;
+    float: left;
+}
+.footer_top ul li {
+    width: 100%;
+    font-size: 12px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #999999;
+}
+.footer_top ul li:first-child {
+    font-size: 11px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #333333;
+    margin-top: 21px;
+}
+.footer_top ul li {
+    margin-top: 15px;
+}
+.second li:nth-child(5) {
+    font-size: 11px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #333333;
+}
+.fourth li:nth-child(4) {
+    font-size: 11px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #333333;
+}
+.fifth li:nth-child(6) {
+    font-size: 11px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #333333;
+}
+.footer_bottom{
+    margin: 0 auto;
+    width: 858px;
+}
+
+.lianxi{
+    width: 100%;
+    font-size: 11px;
+    color: #888;
+    margin-bottom: 7px;
+    padding-bottom: 6px;
+    border-bottom: 1px solid #d6d6d6;
+}
+
+.lianxi a{
+    color: #0070c9;
+    font-size: 11px;
+}
+.lianxi a span{
+    color: #888;
+    font-size: 11px;
+}
+
+.bq_left{
+    font-size: 11px;
+    color: #888;
+    float: left;
+    margin-right: 30px;
+}
+
+.banquan{
+    width: 100%;
+    height: 23px;
+    margin-top: 5px;
+}
+
+.banquan ul{
+    float: left;
+    width: 350px;
+    height: 20px;
+}
+
+.banquan ul li{
+    font-size: 11px;
+    color: #666;
+    border-right: 1px solid #d6d6d6;
+    margin-right: 10px;
+    padding-right: 12px;
+    display: inline-block;
+}
+
+.banquan ul li:last-child{
+    margin-right: 0;
+}
+
+.beian{
+    margin-top: 5px;
+    font-size: 11px;
+    color: #888;
+    width: 980px;
+    height: 17px;
+}
 
 
 
