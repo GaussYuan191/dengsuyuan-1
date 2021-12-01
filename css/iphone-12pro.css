@@ -1,0 +1,243 @@
+.standardnav-background {
+    width: 100%;
+    height: 48px;
+    background: #FFFFFF;
+    box-shadow: 0px 1px 1px 0px rgba(51, 51, 51, 0.21);
+    display: flex;
+    justify-content: center;
+}
+.standardnav-content {
+    width: 978px;
+    height: 48px;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.standardnav-content span:first-child {
+ 
+    font-size: 22px;
+    font-family: Helvetica;
+    font-weight: bold;
+    color: #1D1D1F;
+    line-height: 48px;
+}
+.standardnav-content span:last-child {
+    
+    font-size: 18px;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: #1D1D1F;
+    line-height: 48px;
+}
+.ribbon {
+    width: 100%;
+    height: 66px;
+    background: #F2F2F2;
+    display: flex;
+    justify-content: center;
+
+}
+
+.ribbon-content-wrapper {
+    width: 978px;
+    height: 66px; 
+    display: flex;
+    flex-direction: column;
+}
+
+.ribbon-content p{
+    width: 100%;
+    font-size: 10px;
+    height: 12px;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: #666666;
+    display: flex;
+    line-height: 12px;
+    justify-content: center;
+    align-items: center;
+    
+}
+.ribbon-content p:nth-child(1){
+    margin-top: 11px;
+}
+.ribbon-content p:nth-child(2){
+    margin: 5px 0;
+}
+.product-wrapper {
+    width: 100%;
+    display: flex;
+    background-color: red;
+    justify-content: center;
+}
+.product {
+    width: 978px;
+    height: auto; 
+    display: flex;
+
+}
+.product-img {
+    width: 489px;
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    
+}
+.main-image {
+  margin-top: 74px;
+  height: 424px;
+}
+
+.product-info {
+    width: 489px;
+    background-color: yellow;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.product-info-header {
+    margin-top: 74px;
+    width: 340px;
+    height: 150px;
+    background-color: green;
+}
+.product-info-header p:nth-child(1) {
+    height: 14px;
+    font-size: 14px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #F05636;
+    line-height: 14px;
+    
+}
+.product-info-header p:nth-child(2) {
+    
+    font-size: 38px;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: #1D1D1F;
+    line-height: 38px;
+    margin: 10px 0;
+}
+.product-info-header p:nth-child(3) {
+   
+    height: 13px;
+    font-size: 12px;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: #666666;
+    line-height: 13px;
+}
+
+.product-info-header p:nth-child(4) {
+
+    height: 16px;
+    font-size: 15px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #666666;
+    line-height: 16px;
+    margin: 21px 0 8px 0;
+}
+.product-info-header p:nth-child(5) a {
+    height: 16px;
+    font-size: 15px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #5E8ECB;
+    line-height: 16px;
+}
+.product-selection-type {
+    width: 342px;
+    margin-top: 62px;
+}
+.product-selection-type div:nth-child(1){
+    font-size: 16px;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: #1D1D1F;
+    line-height: 16px;
+}
+.product-selection-type div:nth-child(1)+a{
+    display: block;
+    height: 12px;
+    font-size: 12px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #5E8ECB;
+    line-height: 12px;
+    margin: 17px 0 20px 0;
+}
+.product-selector-item {
+    border: 1px solid #D6D6D6;
+    border-radius: 3px;
+}
+.item-apple12pro-1 {
+    width: 408px;
+    height: 82px;
+    margin-bottom: 17px;
+}
+.item-apple12pro-2 {
+    width: 408px;
+    height: 104px;
+}
+.line {
+    height: 30px;
+    width: 408px;
+    margin-left: 68px;
+    border-bottom: 1px solid #D6D6D6;;
+}
+.product-selection-color {
+
+    width: 408px;
+    height: 265px;
+    background-color: blue;
+    margin-top: 25px;
+    margin-left: 68px;
+}
+.item-color {
+    width: 197px;
+    height: 107px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.item-color-wrapper {
+    width: 408px;
+    height: 229px;
+    background-color: crimson;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.item-color img {
+    width: 32px;
+    height: 32px;
+}
+.item-color span {
+    margin-top: 6px;
+    height: 11px;
+    font-size: 11px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #333333;
+    line-height: 11px;
+}
+
+
+.product-selection-color p:first-child {
+    height: 16px;
+    font-size: 16px;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: #1D1D1F;
+    line-height: 16px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
