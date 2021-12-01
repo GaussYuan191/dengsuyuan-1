@@ -1,0 +1,20 @@
+/* 通用css配置 */
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background: #fff;
+    user-select: none;
+}
+
+img {
+    border: none;
+}
