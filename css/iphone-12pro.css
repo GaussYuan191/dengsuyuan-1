@@ -5,6 +5,8 @@
     box-shadow: 0px 1px 1px 0px rgba(51, 51, 51, 0.21);
     display: flex;
     justify-content: center;
+    top: 0;
+    position:sticky;
 }
 .standardnav-content {
     width: 978px;
@@ -20,6 +22,7 @@
     font-weight: bold;
     color: #1D1D1F;
     line-height: 48px;
+    
 }
 .standardnav-content span:last-child {
     
@@ -68,7 +71,6 @@
 .product-wrapper {
     width: 100%;
     display: flex;
-    background-color: red;
     justify-content: center;
 }
 .product {
@@ -79,28 +81,83 @@
 }
 .product-img {
     width: 489px;
-    background-color: blue;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
     
 }
 .main-image {
-  margin-top: 74px;
+  width: 403px;
   height: 424px;
+  margin: 74px auto 0 auto;
+    
 }
+.buystrip {
+    display: flex;
+    margin-top: 65px;
+    /* flex: 1; */
+}
+.buystrip-item {
+    width: 50%;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.buystrip-item > p {
+    height: 11px;
+    font-size: 10px;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: #333333;
+    margin-top: 14px;
+}
+.chat-buyflow {
+    width: 489px;
+    height: 33px;
+    border-top: 1px solid #D6D6D6;;
+    display: flex;
+    padding: 27px;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+}
+.chat-buyflow > img {
+    margin: 10px;
+}
+.chat-buyflow-container p:nth-child(1) {
+    height: 12px;
+    font-size: 12px;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: #333333;
+    line-height: 12px;
+    margin: 4px 0;
+}
+.chat-buyflow-container a {
+    display: inline-block;
+    height: 14px;
+    font-size: 12px;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: #5E8ECB;
+    line-height: 14px;
+    margin: 4px 0;
+
+}
+
 
 .product-info {
     width: 489px;
-    background-color: yellow;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .product-info-header {
     margin-top: 74px;
-    width: 360px;
+    width: 370px;
     height: 150px;
-    background-color: green;
+    margin-left: 44px;
 }
 .product-info-header p:nth-child(1) {
     height: 14px;
@@ -149,8 +206,9 @@
     line-height: 16px;
 }
 .product-selection-type {
-    width: 360px;
+    width: 408px;
     margin-top: 52px;
+    margin-left: 82px;
 }
 .product-selection-type div:nth-child(1){
     font-size: 16px;
@@ -176,16 +234,18 @@
 .item-apple12pro-1 {
     width: 408px;
     height: 82px;
+    box-sizing: border-box;
     margin-bottom: 17px;
 }
 .item-apple12pro-2 {
     width: 408px;
     height: 104px;
+    box-sizing: border-box;
 }
 .line {
     height: 30px;
     width: 408px;
-    margin-left: 48px;
+    margin-left: 80px;
     border-bottom: 1px solid #D6D6D6;;
 }
 .product-selection-color {
@@ -193,7 +253,7 @@
     width: 408px;
     height: 265px;
     margin-top: 25px;
-    margin-left: 48px;
+    margin-left: 80px;
 }
 .item-color {
     width: 197px;
@@ -206,22 +266,26 @@
 .item-color-wrapper {
     width: 408px;
     height: 229px;
-    background-color: #FFFFFF;
+    background-color: #FFFFFF
 }
 
 .item-color:nth-child(1) {
     float: left;
-    margin-bottom: 11px;
+    margin-bottom: 14px;
+    box-sizing: border-box;
 }
 .item-color:nth-child(2) {
     float: right;
-    margin-bottom: 11px;
+    margin-bottom: 14px;
+    box-sizing: border-box;
 }
 .item-color:nth-child(3) {
     float: left;
+    box-sizing: border-box;
 }
 .item-color:nth-child(4) {
     float: right;
+    box-sizing: border-box;
 }
 .item-color img {
     width: 32px;
@@ -252,7 +316,7 @@
 .product-selection-size {
     height: 294px;
     width: 408px;
-    margin-left: 48px;
+    margin-left: 80px;
     margin-top: 25px;
 }
 .product-selection-size p:nth-child(1) {
@@ -284,7 +348,46 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    box-sizing: border-box;
     
+}
+.item-size p:nth-child(1) {
+    height: 21px;
+    font-size: 28px;
+    font-family: Helvetica;
+    font-weight: 400;
+    color: #1D1D1F;
+    line-height: 21px;
+    margin-top: 18px;
+}
+.item-size p:nth-child(2) {
+    height: 13px;
+    font-size: 12px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #333333;
+    line-height: 13px;
+}
+.item-size p:nth-child(2) span{
+    display: inline-block;
+    height: 13px;
+    font-size: 12px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #333333;
+    position: relative;
+    top: -2px;
+    left: 2px;
+}
+.item-size p:nth-child(3) {
+    height: 10px;
+    font-size: 12px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #333333;
+    line-height: 10px;
+    position: relative;
+    top: -12px;
 }
 .item-size:nth-child(1) {
     float: left;
@@ -299,7 +402,7 @@
 .product-selection-discount {
     height: 169px;
     width: 408px;
-    margin-left: 48px;
+    margin-left: 80px;
     margin-top: 25px;
 }
 .product-selection-discount p:nth-child(1) {
@@ -322,17 +425,341 @@
 .item-discount-wrapper {
     width: 408px;
     height: 107px;
-    display: flex;
-    justify-content: space-around;
 
+}
+.item-discount:nth-child(1) {
+    float: left;
+    box-sizing: border-box;
+}
+.item-discount:nth-child(2) {
+    float: right;
+    box-sizing: border-box;
 }
 .item-discount {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 195px;
+    width: 197px;
     height: 107px;
+    
 }
+.product-selection-server {
+    height: 338px;
+    width: 407px;
+    margin-left: 80px;
+    margin-top: 26px;
+}
+.product-selection-server p:nth-child(1) {
+    height: 18px;
+    font-size: 16px;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: #1D1D1F;
+    line-height: 18px; 
+}
+.product-selection-server p:nth-child(2) {
+    width: 420px;
+    height: 12px;
+    font-size: 11px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #1D1D1F;
+    line-height: 12px;
+    margin: 12px 0 22px 0;
+}
+.item-server:nth-child(1) {
+    width: 407px;
+    height: 82px;
+    box-sizing: border-box;
+    line-height: 82px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    
+}
+.item-server:nth-child(1) p {
+    margin-left: 15px;
+}
+.item-server:nth-child(2) {
+    width: 407px;
+    height: 177px;
+    box-sizing: border-box;
+}
+.item-server:nth-child(2) p {
+    width: 376px;
+    margin: 0 auto;
+    margin-top: 18px;
+}
+.item-server:nth-child(2) p span:nth-child(1) {
+    height: 18px;
+    font-size: 16px;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: #1D1D1F;
+    line-height: 18px;
+    display: inline-block;
+    float: left;
+}
+.item-server:nth-child(2) p span:nth-child(2) {
+    height: 13px;
+    font-size: 16px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #333333;
+    line-height: 13px;
+    display: inline-block;
+    float: right;
+}
+.server-line {
+    width: 376px;
+    margin: 0 auto;
+    margin-top: 16px;
+    border-bottom: 1px solid #D6D6D6;;
+}
+.server-info-wrapper {
+    width: 236px;
+    height: 80px;
+    margin-left: 27px;
+    margin-top: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+.server-info-wrapper p:nth-child(1) {
+    height: 13px;
+    font-size: 11px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #333333;
+    line-height: 13px;
+    margin: 0;
+}
+.server-info-wrapper p:nth-child(2) {
+    height: 12px;
+    font-size: 11px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #333333;
+    line-height: 12px;
+    margin: 0;
+}
+.server-info-wrapper p:nth-child(3) {
+    height: 12px;
+    font-size: 11px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #333333;
+    line-height: 12px;
+    margin: 0;
+
+}
+.server-info-wrapper p:nth-child(4) {
+    height: 12px;
+    font-size: 11px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #333333;
+    line-height: 12px;
+    margin: 0;
+}
+.product-selection-buy {
+    width: 408px;
+    height: 297px;
+    margin-left: 80px;
+    margin-top: 23px;
+}
+.product-selection-buy > p:nth-child(1) {
+    height: 12px;
+    font-size: 12px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #5E8ECB;
+    
+}
+.item-buy-wrapper {
+    width: 408px;
+    height: 253px;
+    margin-top: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.item-buy {
+    width: 348px;
+    height: 209px;
+    background: #FAFAFA;;
+}
+.item-buy > p:nth-child(1) {
+    height: 63px;
+    font-size: 32px;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: #1D1D1F;
+    line-height: 32px;
+}
+.item-buy > p:nth-child(2) {
+    height: 14px;
+    font-size: 13px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #333333;
+    line-height: 14px;
+    margin: 14px 0 12px 0;
+
+}
+.item-buy > a {
+    height: 15px;
+    font-size: 14px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #5E8ECB;
+    line-height: 15px;
+    display: inline-block;
+    margin-bottom: 26px;
+}
+.line-buy {
+    width: 348px;
+    border-bottom: 1px solid #D6D6D6;
+}
+.item-selection-wrapper {
+    width: 348px;
+    height: 35px;
+    display: flex;
+    margin-top: 28px;
+    align-items: center;
+}
+.item-selection-buy {
+    width: 303px;
+    height: 35px;
+    background-image: url("../assets/images/bule-crad.png");
+    background-repeat: no-repeat;
+    text-align: center;
+    font-size: 15px;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: #FFFFFF;
+    line-height: 35px;
+
+}
+.item-selection-like {
+    width: 23px;
+    height: 21px;
+    background-image: url("../assets/images/heart.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto;
+}
+.package-container {
+    width: 991px;
+    height: 608px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 145px;
+}
+.package-container > p:nth-child(1) {
+    height: 34px;
+    font-size: 36px;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: #1D1D1F;
+    line-height: 34px;
+}
+.package-container span{
+    display: inline-block;
+    height: 16px;
+    font-size: 16px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #333333;
+    line-height: 16px;
+    margin-top: 27px;
+    position:absolute;
+}
+.package-container span:nth-child(1) {
+    position: relative;
+    right: 45px;
+}
+.package-container span:nth-child(2) {
+    position: relative;
+    left: 100px;
+}
+.package-container > p:nth-child(4) {
+  width: 989px;
+  height: 35px;
+  font-size: 13px;
+  font-family: PingFang SC;
+  font-weight: 400;
+  color: #333333;
+  text-align: center;
+  margin-top: 70px;
+  margin-bottom: 25px;
+
+}
+.package-container > p:nth-child(5) {
+    height: 14px;
+    font-size: 13px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #333333;
+    line-height: 14px;
+    margin-bottom: 52px;
+}
+.magsafe-container {
+  
+    width: 724px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.masge-wrapper {
+    width: 724px; 
+    margin: 0 auto;
+    margin-top: 74px;
+}
+.magsafe-container p {
+    text-align: center;
+}
+ .magsafe-container p:nth-child(1) {
+    height: 38px;
+    font-size: 36px;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: #1D1D1F;
+    line-height: 38px;
+ }
+ .magsafe-container p:nth-child(2) {
+    font-size: 14px;
+    width: 638px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #333333;
+    line-height: 14px;
+    margin-top: 27px;
+
+ }
+ .magsafe-container p:nth-child(3) {
+    font-size: 14px;
+    width: 638px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #333333;
+    line-height: 14px;
+    margin-top: 11px;
+    margin-bottom: 22px;
+ }
+ .magsafe-container p:nth-child(4) {
+    height: 18px;
+    font-size: 16px;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: #5E8ECB;
+    line-height: 18px;
+    margin-bottom: 31px;
+ }
 
 
 

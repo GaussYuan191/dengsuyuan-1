@@ -19,7 +19,6 @@
     line-height: 44px;
 }
 .nav-first li a {
-    margin: auto 5px;
     display: block;
     font-size: 13px;
     font-family: Helvetica;
@@ -28,15 +27,15 @@
     
 }
 .nav-first li:first-child {
-    width: 26px;
+    width: 16px;
     height: 44px;
 }
 .nav-first li:nth-child(8) {
-    width: 28px;
+    width: 18px;
     height: 44px;
 }
 .nav-first li:last-child {
-    width: 27px;
+    width: 17px;
     height: 44px;
 }
 
