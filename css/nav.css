@@ -47,6 +47,20 @@
     background-repeat: no-repeat;
     
 }
+.nav-first li a:hover {
+    color: #FFFFFF ;
+}
+.nav-first li:nth-child(1) a:hover {
+    filter:brightness(2.3);
+}
+.nav-first li:nth-child(8) a:hover {
+    filter:brightness(2.3);
+}
+.nav-first li:nth-child(9) a:hover {
+    filter:brightness(2.3);
+}
+
+
 
 .nav-first li:nth-child(8) a{
     width: 18px;
