@@ -11,38 +11,44 @@
             width: 100%;
             height: 646px;
             position: relative;
+            display: flex;
+            align-items: center;
         }
-       .direction {
-           width: 100%;
-           height: 64px;
-           display: flex;
-           justify-content: space-between;
-           z-index: 999;
-           position: absolute;
-       }
-       #btn-letf {
-           width: 64px;
-           height: 64px;
-           background-image: url("../assets/images/left.png");
-       }
-       #btn-right {
-           width: 64px;
-           height: 64px;
-           background-image: url("../assets/images/right.png");
-       }
-       .transform-img-item-group {
-           width: 100%;
-           height: 100%;
-           position: absolute;
-           z-index: -999;
-       }
-       .item-img {
+
+
+        .transform-img-item-group {
+            width: 100%;
+            height: 100%;
             position: absolute;
+        }
+        .item-img {
+          position: absolute;
             opacity: 0;
             transform: all 1s;
         }
         .item-img img{
             width: 100%;
+            height: 65px;
+            float: left;
+            
+        }
+        #btn-letf {
+            width: 64px;
+            height: 64px;
+            background: url("../assets/images/left.png");
+            z-index: 99;
+        
+        }
+        #btn-right {
+            width: 64px;
+            height: 64px;
+            background: url("../assets/images/right.png");
+            z-index: 99;
+           
+        }
+        img {
+             width: 100%;
+
         }
 
        

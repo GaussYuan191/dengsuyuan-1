@@ -1,5 +1,7 @@
 let itemImgs = document.getElementsByClassName("item-img")
 let points = document.getElementsByClassName("select-point")
+
+
 let content = document.querySelector(".content")
 let leftBtn = document.getElementById("btn-letf");
 let rightBtn = document.getElementById("btn-right");
