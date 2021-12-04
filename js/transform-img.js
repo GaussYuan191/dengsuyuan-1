@@ -1,11 +1,12 @@
 let itemImgs = document.getElementsByClassName("item-img")
 let points = document.getElementsByClassName("select-point")
-let leftBtn = document.getElementsByClassName("btn-letf")
-let rightBtn = document.getElementsByClassName("btn-right")
 let content = document.querySelector(".content")
+let leftBtn = document.getElementById("btn-letf");
+let rightBtn = document.getElementById("btn-right");
 let index = 0
 let timer = null
 const ms = 1500 
+
 
 //初始化状态
 let clearActive = function() {
@@ -21,7 +22,8 @@ let goIndex = function() {
     points[index].className = "select-point active"
 }
 //点击下一张图片
-rightBtn.onclink = function() {
+rightBtn.onclick = function() {
+    console.log("向y")
     if (index < itemImgs.length - 1) {
         index++
     } else {
@@ -31,7 +33,8 @@ rightBtn.onclink = function() {
     console.log("aaaa")
 }
 //点击上一张图片
-leftBtn.onclink = function() {
+leftBtn.onclick = function() {
+    console.log("向左")
     if (index > 0) {
         index--
     } else {
@@ -41,7 +44,7 @@ leftBtn.onclink = function() {
 }
 //开启定时播放图片
 timer = setInterval(() => {
-    rightBtn.onclink()
+    rightBtn.onclick()
 }, ms)
 //当鼠标移入的时候，关闭定时器
 content.onmouseover = function() {
@@ -50,6 +53,6 @@ content.onmouseover = function() {
 //当鼠标移出的时候，重新开启计时器
 content.onmouseout = function() {
     timer = setInterval(() => {
-        rightBtn.onclink()
+        rightBtn.onclick()
     }, ms);
 }
