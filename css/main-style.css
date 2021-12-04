@@ -211,12 +211,47 @@
 .list2 li:nth-child(1) {
     margin-top: 10px;
 }
-.list2 li:nth-child(1) a {
+.list2 li:nth-child(2) {
+    margin-top: 10px;
+}
+.footer-text {
+    height: 15px;
+    font-size: 15px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #1576EE;
+    line-height: 15px;
+    display: flex;
+    justify-content: center;
+    margin-top: 19px;
+}
+.footer-text span:nth-child(1) {
+    margin-right: 5px;
+}
+.footer-text span:nth-child(2) {
+    margin-left: 14px;
+}
+.list2 li:nth-child(1)  a {
     width: 943px;
     height: 557px;
     display: block;
     background: url("../assets/images/watch6.png");
-    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.watch-img {
+    margin-top: 50px;
+}
+.list2 li:nth-child(1)  a p:nth-child(2) {
+    height: 18px;
+    font-size: 18px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 18px;
+    margin-top: 10px;
 }
 
 .list2 li:nth-child(2) a {
@@ -224,6 +259,29 @@
     height: 557px;
     display: block;
     background: url("../assets/images/iPadAir.png");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.list2 li:nth-child(2) a  p:nth-child(1) {
+    height: 30px;
+    font-size: 40px;
+    font-family: Helvetica;
+    font-weight: 400;
+    color: #1D1D1F;
+    line-height: 30px;
+    text-align: center;
+    margin-top: 60px;
+}
+.list2 li:nth-child(2) a  p:nth-child(2) {
+    height: 17px;
+    font-size: 18px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #242220;
+    line-height: 17px;
+    text-align: center;
+    margin-top: 16px;
 }
 
 .list2 li:nth-child(3) a {
@@ -231,6 +289,37 @@
     height: 557px;
     display: block;
     background: url("../assets/images/iPad.png");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.list2 li:nth-child(3) a p:nth-child(1) {
+    height: 15px;
+    font-size: 15px;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: #242220;
+    line-height: 15px;
+    margin-top: 372px;
+}
+.list2 li:nth-child(3) a p:nth-child(2) {
+    height: 67px;
+    font-size: 96px;
+    font-family: 经典行楷繁;
+    font-weight: 400;
+    color: #1D1D1F;
+    line-height: 67px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.list2 li:nth-child(3) a p:nth-child(3) {
+    height: 19px;
+    font-size: 19px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #242220;
+    line-height: 19px;
+    margin-top: 10px;
 }
 
 .list2 li:nth-child(4) a {
@@ -238,6 +327,19 @@
     height: 557px;
     display: block;
     background: url("../assets/images/watchSE.png");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.list2 li:nth-child(4) a p:nth-child(2) {
+
+    height: 18px;
+    font-size: 18px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #39364A;
+    line-height: 18px;
+    margin-top: 16px;
 }
 
 .list2 li:nth-child(5) a {
@@ -245,13 +347,55 @@
     height: 557px;
     display: block;
     background: url("../assets/images/AirPodsPro.png");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+.list2 li:nth-child(5) a p:nth-child(1) {
+    height: 39px;
+    font-size: 39px;
+    font-family: Helvetica;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 39px;
+    margin-top: 61px;
+}
+.list2 li:nth-child(5) a p:nth-child(2) {
+    height: 18px;
+    font-size: 18px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 18px;
+    margin-top: 16px;
+} 
 
 .list2 li:nth-child(6) a {
     width: 943px;
     height: 557px;
     display: block;
     background: url("../assets/images/AppStore.png");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.list2 li:nth-child(6) a p:nth-child(1) {
+    height: 39px;
+    font-size: 40px;
+    font-family: Helvetica;
+    font-weight: 400;
+    color: #1D1D1F;
+    line-height: 39px;
+    margin-top: 60px;
+}
+.list2 li:nth-child(6) a p:nth-child(2) {
+    height: 19px;
+    font-size: 18px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #242220;
+    line-height: 19px;
+    margin-top: 7px;
 }
 
 

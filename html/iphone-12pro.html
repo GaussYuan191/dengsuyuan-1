@@ -30,7 +30,10 @@
         <div class="product-wrapper">
             <div class="product">
                 <div class="product-img">
-                    <img class="main-image" src="../assets/images/iphone-12pro-main.png" alt="">
+                    <div class="product-img-content">
+                        <div class="main-img-wrapper">
+                            <img class="main-image" src="../assets/images/iphone-12pro-main.png" alt="">
+                        </div>
                     <div class="buystrip">
                         <div class="buystrip-item">
                             <img src="../assets/images/imgicon-shipping.png" alt="" class="buystrip-item-img" width="25px" height="25px">
@@ -49,6 +52,7 @@
                             <a href="">与 iPhone Specialist 专家在线交流</a>
                         </div>
                     </div>
+                    </div>
                 </div>
                 <div class="product-info">
                     <div class="product-info-header">
@@ -63,18 +67,37 @@
                         <a href="">哪款机型适合你？</a>
                         <div class="product-selector-group">
                           <div class="product-selector-item item-apple12pro-1">
-                              <!-- <span>iPhone 12 Pro</span>
-                              <span>RMB 354/月或</span>
-                              <span>6.1 英寸显示屏¹</span>
-                              <span>RMB 8499 起</span> -->
+                              <div class="type-apple12pro-wrapper1">
+                                  <div class="type1-wrapper">
+                                     <p>iPhone 12 Pro</p>
+                                  
+                                     <p>6.1 英寸显示屏¹</p>
+                                        
+                                  </div>
+                                    <div class="type2-wrapper">
+                                        <p>RMB 354/月或</p>
+                                        <p>RMB 8499 起</p>
+                                    </div>
+
+                              </div>
+                              
     
                           </div> 
                           <div class="product-selector-item item-apple12pro-2">
-                              <!-- <span>立即预购</span>
-                              <span>RMB 354/月或</span>
-                              <span>iPhone 12 Pro</span>
-                              <span>RMB 8499 起</span>
-                              <span>6.1 英寸显示屏¹</span>     -->
+                            <div class="type-apple12pro-wrapper2">
+                                <div class="type3-wrapper">
+                                   <p>立即预购</p>
+                                   <p>iPhone 12 Pro</p>
+                                
+                                   <p>6.1 英寸显示屏¹</p>
+                                      
+                                </div>
+                                  <div class="type4-wrapper">
+                                      <p>RMB 354/月或</p>
+                                      <p>RMB 8499 起</p>
+                                  </div>
+
+                            </div>
                           </div> 
                         </div>
                         
@@ -191,8 +214,29 @@
             <p>我们建议你重复使用现有的 USB-A 转闪电连接线、电源适配器和耳机，它们均兼容这些 iPhone 机型。但如果你需要任何新的</p>
         </div>
         <div class="transform-img">
-            <img src="../assets/images/apple12pro-1.png" alt="" width="100%" height="auto">
+            <div class="content">
+                <ul class="transform-img-item-group">
+                        <li><a href="#"class="item-img active"><img src="../assets/images/apple12pro-1.png" alt=""></a></li>
+                        <li><a href="#"class="item-img"><img src="../assets/images/apple12pro-2.png" alt=""></a></li>
+                        <li><a href="#"class="item-img"><img src="../assets/images/apple12pro-3.png" alt=""></a></li>
+                        <li><a href="#"class="item-img"><img src="../assets/images/apple12pro-4.png" alt=""></a></li>
+                        <li><a href="#"class="item-img"><img src="../assets/images/apple12pro-5.png" alt=""></a></li>
+                </ul>
+            
+            <div class="direction">
+                <div id="btn-letf"></div>
+                <div id="btn-right"></div>
+            </div>
+            <ul id="select-point">
+                <li class="select-point active" data-index="0"></li>
+                <li class="select-point" data-index="1"></li>
+                <li class="select-point" data-index="2"></li>
+                <li class="select-point" data-index="3"></li>
+                <li class="select-point" data-index="4"></li>
+            </ul>
+          </div>
         </div>
+        
         <div class="masge-wrapper">
             <div class="magsafe-container">
                 <p>MagSafe。咔嗒，一贴即合。</p>
@@ -206,7 +250,7 @@
             <img src="../assets/images/img-apple-type.png" alt="" width="100%" height="503px">
         </div>
         <iframe src="./footer.html" frameborder = 0 height="490px" width="100%"></iframe>
-        
+        <script src="../js/transform-img.js"></script>
     </div>
 </body>
 </html>

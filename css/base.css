@@ -5,6 +5,10 @@
     list-style: none;
     
 }
+input { 
+    outline: none; 
+}
+
 @font-face {
     font-family: PingFang SC;
     src: url('../assets/font/PingFangSC.ttf');
@@ -12,6 +16,10 @@
 @font-face {
     font-family: PingFang-SC-Bold;
     src: url('../assets/font/PingFang-SC-Bold.ttf');
+}
+@font-face {
+    font-family: 经典行楷繁;
+    src: url('../assets/font/经典行楷繁.TTF');
 }
 a {
     text-decoration: none;

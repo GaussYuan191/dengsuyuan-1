@@ -1,75 +1,75 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style type="text/css">
-        .black_overlay {
-      display: none;
-      position: absolute;
-      top: 0%;
-      left: 0%;
-      width: 100%;
-      height: 100%;
-      background-color: #00C0A5;
-      z-index: 1001;
-      -moz-opacity: 0.8;
-      opacity: .80;
-      filter: alpha(opacity=50);
-  }
-  
-  .white_content {
-      border-radius: 20px;
-      display: none;
-      position: absolute;
-      top: 30%;
-      left: 40%;
-      background-color: #FFFFFF;
-      z-index: 1002;
-   /* 数字的大小指明了div的相对层，数字大的在上层 */
-      overflow: auto;
-  }  
-  </style>
-</head>
-<body>
-    <div class="top_contact_us">
-        <div class="top_telphone"></div>
-        <div class="top_weixin"><a href="#" id="contact_weixin" onclick="openWindow(this)">微信公众号</a></div>  
-        <div class="top_qq"><a href="#" id="contact_qq" onclick="openWindow(this)">官方QQ群</a></div>  
-    </div>
-    <div id="light_qq" class="white_content"> 
-        <img src='img/qq_erweima.png' />  
-    </div>
-    <div id="light_weixin" class="white_content">  
-        <img src='img/weixin_erweima.png' />  
-    </div>
-    <div id="fade" class="black_overlay"  onClick="closeWindow()">
-    </div>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"> 
 
-        <script  type="text/javascript">
-    function openWindow(obj){
-        var qq_or_weixin = "light_qq";
-        switch(obj.id)
-        {
-            case 'contact_weixin':
-            qq_or_weixin = "light_weixin";
-            break;
-            
-            case 'contact_qq':
-            qq_or_weixin = "light_qq";
-            break;
+<html> 
+    <head> 
+        <meta charset="utf-8">
+        <title>点击文字弹出一个DIV层窗口代码</title> 
+        <style> 
+        .black_overlay{ 
+            display: none; 
+            position: absolute; 
+            top: 0%; 
+            left: 0%; 
+            width: 100%; 
+            height: 100%; 
+            background-color: black; 
+            z-index:1001; 
+            -moz-opacity: 0.8; 
+            opacity:.80; 
+            filter: alpha(opacity=88); 
+        } 
+        .white_content { 
+            display: none; 
+            position: absolute; 
+            top: 25%; 
+            left: 25%; 
+            width: 55%; 
+            height: 55%; 
+            padding: 20px; 
+            border: 10px solid orange; 
+            background-color: white; 
+            z-index:1002; 
+            overflow: auto; 
+        } 
+        .box {
+            height: 3000px;
+            width: 100%;
+            background-color: red;
         }
-        document.getElementById(qq_or_weixin).style.display='block';
-        document.getElementById('fade').style.display='block';
-    }
-    function closeWindow(){
-        document.getElementById('light_weixin').style.display='none';
-        document.getElementById('light_qq').style.display='none';
-        document.getElementById('fade').style.display='none';
-    }
-
+    </style> 
+    </head> 
+    <body> 
+        <div class="box"></div>
+        <p>示例弹出层：<a href = "JavaScript:void(0)" onclick = "openDialog()">请点这里</a></p> 
+        <div id="light" class="white_content">
+            <table>
+                <tr>
+                    <td>fffff</td>
+                    <td>dddddd</td>
+                </tr>
+                <tr>
+                    <td>fffff</td>
+                    <td>dddddd</td>
+                </tr>
+                <tr>
+                    <td>fffff</td>
+                    <td>dddddd</td>
+                </tr>
+            </table> 
+            <a href = "javascript:void(0)" onclick = "closeDialog()">点这里关闭本窗口</a>
+        </div> 
+        <div id="fade" class="black_overlay"></div> 
+    </body> 
+    <script type="text/javascript">
+        $(function(){
+        })
+        function openDialog(){
+            document.getElementById('light').style.display='block';
+            document.getElementById('fade').style.display='block'
+        }
+        function closeDialog(){
+            document.getElementById('light').style.display='none';
+            document.getElementById('fade').style.display='none'
+        }
     </script>
-</body>
 </html>
