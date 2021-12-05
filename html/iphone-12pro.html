@@ -8,10 +8,67 @@
     <title>购买 iPhone 12 Pro 和 iPhone 12</title>
     <link rel="stylesheet" href="../css/base.css">
     <link rel="stylesheet" href="../css/iphone-12pro.css">
+    <link rel="stylesheet" href="../css/nav.css">
+    
 </head>
 <body>
     <div class="container">
-        <iframe src="./nav.html" frameborder = 0 height="44px" width="100%"></iframe>
+        
+
+        <nav class="nav-main">
+            <ul class="nav-first">
+                <li>
+                    <a href="#"></a>
+                </li>
+                <li><a href="#">Mac</a></li>
+                <li><a href="#">iPad</a></li>
+                <li><a href="#">iPhone</a></li>
+                <li><a href="#">Watch</a></li>
+                <li><a href="#">Music</a></li>
+                <li><a href="#">技术支持</a></li>
+                <li>
+                    <a href="#" id="link-search"></a>
+                </li>
+                <li>
+                    <a href="#"></a>
+                </li>
+            </ul>
+            <aside id="searchview" class="searchview">
+                <div class="searchview-content">
+                    
+                    
+                    <form class="searchform" action="/search">
+                        <div id="search-icon"></div>
+                        <div class="searchform-wrapper">
+                            <input id="searchform-input" type="text" placeholder="搜索 apple.com.cn " value="" autofocus autocomplete="off">
+                            
+    
+                        </div>
+                        <div id="search-close"></div>
+                    </form>
+                    
+         
+                </div>
+    
+            </aside>
+           
+        </nav>
+        <aside id="searchresults">
+            <section class="searchresults-section">
+                <div class="searchresults-section-wrapper">
+                    <p>快速链接</p>
+                    <ul class="searchresults-list">
+                        <li><a href="#">Apple Store 商店</a></li>
+                        <li><a href="#">Apple Store 商店</a></li>
+                        <li><a href="#">Apple Store 商店</a></li>
+                        <li><a href="#">Apple Store 商店</a></li>
+                        <li><a href="#">Apple Store 商店</a></li>
+                    </ul>
+                </div>
+
+            </section>
+
+        </aside>
         <div class="standardnav-background">
             <div class="standardnav-content">
                 <span>iPhone 12 Pro</span>
@@ -107,21 +164,21 @@
                         <p>选择外观</p>
                         <div class="item-color-wrapper">
                             
-                                <div class="product-selector-item item-color">
+                                <div class="product-selector-item item-color" data-index="0">
                                     <img src="../assets/images/color-shimose.png" alt="石墨色">
                                     <span>石墨色</span>
                                 </div>
-                                <div class="product-selector-item item-color">
+                                <div class="product-selector-item item-color" data-index="1">
                                     <img src="../assets/images/color-silery.png" alt="银色">
                                     <span>银色</span>
                                 </div>
                             
                             
-                                <div class="product-selector-item item-color">
+                                <div class="product-selector-item item-color" data-index="2">
                                     <img src="../assets/images/color-golden.png" alt="金色">
                                     <span>金色</span>
                                 </div>
-                                <div class="product-selector-item item-color">
+                                <div class="product-selector-item item-color" data-index="3">
                                     <img src="../assets/images/color-navy-bule.png" alt="深蓝色">
                                     <span>深蓝色</span>
                                 </div>
@@ -192,7 +249,39 @@
                             <div class="item-buy">
                                 <p>RMB 387/月或 RMB 11899</p>
                                 <p>含增值税及其他法定税费：约 RMB 1,191‡。</p>
-                                <a href="">24 期 0% 费率，每月仅约 RMB 429</a>
+                                <div class="fenqi-dialog">
+                        
+                                    <a href = "JavaScript:void(0)" onclick = "openDialog()">24 期 0% 费率，每月仅约 RMB 429</a>
+                                    <div id="light" class="white_content">
+                                        <img class="close-overlay" src="../assets/images/close.png" width="27px" height="31px" alt="" onclick = "closeDialog()">
+                                        <div class="overlay-content">
+                                            <p>享受 24 个月免息分期</p>
+                                            <p>当你从 Apple Store 在线商店购买产品时, 请参考以下分期付款方案及费率。</p>
+                                            <a href="#">进一步了解 &nbsp&nbsp></a>
+                                            <div class="compareplans-datatable">
+                            
+                                            </div>
+                                            <p>分期付款信息：</p>
+                                            <div class="compareplans-information-wrapper">
+                                                <ul class="compareplans-information">
+                                                    <li>上述分期付款服务可能随时发生更改，恕不另行通知。</li>
+                                                    <li>使用借记卡购买产品不能享受分期付款服务。</li>
+                                                    <li>上述服务不一定适用于从 Apple Store 零售店或 Apple 经销商处购买产品。请到店咨询分期付款服务事宜。</li>
+                                                    <li>请注意，如果你选择花呗分期，可能需要在手机上安装“支付宝”app 来完成支付。如果你选择招商银行分期，需要在手机上安装“掌上生活”
+                                                        app 来完成支付。</li>
+                                                    <li>Apple Store 在线商店提供的每月还款额仅为估算值。每月实际还款额由你的分期付款提供商计算，并反映在月度账单上。</li>
+                                                    <li>本页提供的分期付款合作伙伴、分期付款服务以及条款与条件适用于通过电话、 在线交流(在新窗口中打开)或 Apple Store 在线商店下单订购。</li>
+                                                    
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        
+                                    </div> 
+                                    <div id="fade" class="black_overlay"></div>
+                                </div>
+                                
+
+                                
                                 <div class="line-buy"></div>
                                 <div class="item-selection-wrapper">
                                     <div class="item-selection-buy" id="product-buy">添加到购物袋</div>
@@ -213,29 +302,32 @@
                 B-C 电源适配器和电脑端口。</p>
             <p>我们建议你重复使用现有的 USB-A 转闪电连接线、电源适配器和耳机，它们均兼容这些 iPhone 机型。但如果你需要任何新的</p>
         </div>
-        <div class="transform-img">
-            <div class="content">
-                <ul class="transform-img-item-group">
-                        <li><a href="#"class="item-img active"><img src="../assets/images/apple12pro-1.png" alt=""></a></li>
-                        <li><a href="#"class="item-img"><img src="../assets/images/apple12pro-2.png" alt=""></a></li>
-                        <li><a href="#"class="item-img"><img src="../assets/images/apple12pro-3.png" alt=""></a></li>
-                        <li><a href="#"class="item-img"><img src="../assets/images/apple12pro-4.png" alt=""></a></li>
-                        <li><a href="#"class="item-img"><img src="../assets/images/apple12pro-5.png" alt=""></a></li>
+        <div class="transform-img-wrapper">
+            <div class="transform-img">
+                <div class="content">
+                    <ul class="transform-img-item-group">
+                            <li><a href="#"class="item-img active"><img src="../assets/images/apple12pro-1.png" alt=""></a></li>
+                            <li><a href="#"class="item-img"><img src="../assets/images/apple12pro-2.png" alt=""></a></li>
+                            <li><a href="#"class="item-img"><img src="../assets/images/apple12pro-3.png" alt=""></a></li>
+                            <li><a href="#"class="item-img"><img src="../assets/images/apple12pro-4.png" alt=""></a></li>
+                            <li><a href="#"class="item-img"><img src="../assets/images/apple12pro-5.png" alt=""></a></li>
+                    </ul>
+                
+                <div class="direction">
+                    <div id="btn-letf"></div>
+                    <div id="btn-right"></div>
+                </div>
+                <ul id="select-point">
+                    <li class="select-point active" data-index="0"></li>
+                    <li class="select-point" data-index="1"></li>
+                    <li class="select-point" data-index="2"></li>
+                    <li class="select-point" data-index="3"></li>
+                    <li class="select-point" data-index="4"></li>
                 </ul>
-            
-            <div class="direction">
-                <div id="btn-letf"></div>
-                <div id="btn-right"></div>
+              </div>
             </div>
-            <ul id="select-point">
-                <li class="select-point active" data-index="0"></li>
-                <li class="select-point" data-index="1"></li>
-                <li class="select-point" data-index="2"></li>
-                <li class="select-point" data-index="3"></li>
-                <li class="select-point" data-index="4"></li>
-            </ul>
-          </div>
         </div>
+        
         
         <div class="masge-wrapper">
             <div class="magsafe-container">
@@ -252,5 +344,8 @@
         <iframe src="./footer.html" frameborder = 0 height="490px" width="100%"></iframe>
         <script src="../js/transform-img.js"></script>
     </div>
+    <script src="../js/fenqi.js"></script>
+    <script src="../js/nav-search.js"></script>
+    <script src="../js/iphone-12pro.js"></script>
 </body>
 </html>
