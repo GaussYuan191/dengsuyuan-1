@@ -25,18 +25,15 @@ let goIndex = function() {
 }
 //点击下一张图片
 rightBtn.onclick = function() {
-    console.log("向y")
     if (index < itemImgs.length - 1) {
         index++
     } else {
         index = 0
     }
     goIndex()
-    console.log("aaaa")
 }
 //点击上一张图片
 leftBtn.onclick = function() {
-    console.log("向左")
     if (index > 0) {
         index--
     } else {
