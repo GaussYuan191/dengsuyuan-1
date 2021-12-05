@@ -11,6 +11,7 @@ let itemList =  resultList.filter((item, index) => {
     return index % 2 != 0
 })
 let searchResults = document.getElementById("searchresults")
+//当输入框输入时，结果区域同步显示输入的内容
 searchInput.oninput = function() {
     itemList.forEach((item) => {
         if (searchInput.value == "") {
@@ -50,7 +51,9 @@ linkSearch.onclick = function() {
     inputInit()
     navAnimation()
     searchInput.focus()
+    document.getElementById('fade').style.display='block'
     console.log(navContent.style.display,searchContent.style.display ,searchResults.style.display)
+    disableScroll()
 
     
 }
@@ -60,6 +63,8 @@ closeBtn.onclick = function() {
     searchContent.style.display = "none"
     navContent.style.display = "flex"
     searchresultContent.style.display = "none"
+    document.getElementById('fade').style.display='none'
+    runScroll()
 }
 //当搜索框出现时，点击搜索框以外的区域，搜索区域隐藏
 document.onclick = function(e) {
@@ -85,4 +90,50 @@ function mouseCoords(ev)
          y:ev.clientY + document.body.scrollTop - document.body.clientTop 
     }
  } 
+ var keys = {37: 1, 38: 1, 39: 1, 40: 1};
+
+function preventDefault(e) {
+  e.preventDefault();
+}
+
+function preventDefaultForScrollKeys(e) {
+  if (keys[e.keyCode]) {
+    preventDefault(e);
+    return false;
+  }
+}
+
+// modern Chrome requires { passive: false } when adding event
+var supportsPassive = false;
+try {
+  window.addEventListener(
+    'test',
+    null,
+    Object.defineProperty({}, 'passive', {
+      get: function () {
+        supportsPassive = true;
+      },
+    }),
+  );
+} catch (e) {}
+
+var wheelOpt = supportsPassive ? {passive: false} : false;
+var wheelEvent = 'onwheel' in document.createElement('div') ? 'wheel' : 'mousewheel';
+
+// 禁止滚动事件
+function disableScroll() {
+  window.addEventListener('DOMMouseScroll', preventDefault, false); // older FF
+  window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
+  window.addEventListener('touchmove', preventDefault, wheelOpt); // mobile
+  window.addEventListener('keydown', preventDefaultForScrollKeys, false);
+}
+//开启滚动事件
+function runScroll() {
+  window.removeEventListener('DOMMouseScroll', preventDefault, false); // older FF
+  window.removeEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
+  window.removeEventListener('touchmove', preventDefault, wheelOpt); // mobile
+  window.removeEventListener('keydown', preventDefaultForScrollKeys, false);
+}
+
+
 
