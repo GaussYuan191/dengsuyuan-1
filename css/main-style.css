@@ -7,6 +7,7 @@
     height: 40px;
     width: 100%;
     background: #444444;
+    z-index: 9;
 }
 
 .adv-wrapper-text{
@@ -21,6 +22,7 @@
     line-height: 40px;;
     
 }
+
 
 .tag {
     width: 100%;
@@ -396,6 +398,9 @@
     color: #242220;
     line-height: 19px;
     margin-top: 7px;
+}
+.selector-item-active {
+    
 }
 
 
