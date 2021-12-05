@@ -8,6 +8,7 @@
     <link rel="icon" href="./assets/images/apple-icon.png" type="image/x-icon" />
     <link rel="stylesheet" href="./css/base.css">
     <link rel="stylesheet" href="./css/main-style.css">
+    <link rel="stylesheet" href="./css/nav.css">
 </head>
 <body>
     <div class="container">
@@ -15,8 +16,63 @@
             <div class="adv-wrapper">
                 <div class="adv-wrapper-text"><广告></div>
             </div>
-            <iframe src="./html/nav.html" frameborder = 0 height="44px" width="100%"></iframe>
+            <nav class="nav-main">
+                <ul class="nav-first">
+                    <li>
+                        <a href="#"></a>
+                    </li>
+                    <li><a href="#">Mac</a></li>
+                    <li><a href="#">iPad</a></li>
+                    <li><a href="#">iPhone</a></li>
+                    <li><a href="#">Watch</a></li>
+                    <li><a href="#">Music</a></li>
+                    <li><a href="#">技术支持</a></li>
+                    <li>
+                        <a href="#" id="link-search"></a>
+                    </li>
+                    <li>
+                        <a href="#"></a>
+                    </li>
+                </ul>
+                <aside id="searchview" class="searchview">
+                    <div class="searchview-content">
+                        
+                        
+                        <form class="searchform" action="/search">
+                            <div id="search-icon"></div>
+                            <div class="searchform-wrapper">
+                                <input id="searchform-input" type="text" placeholder="搜索 apple.com.cn " value="" autofocus autocomplete="off">
+                                
+        
+                            </div>
+                            <div id="search-close"></div>
+                        </form>
+                        
+             
+                    </div>
+        
+                </aside>
+               
+            </nav>
         </div>
+        
+        <aside id="searchresults">
+            <section class="searchresults-section">
+                <div class="searchresults-section-wrapper">
+                    <p>快速链接</p>
+                    <ul class="searchresults-list">
+                        <li><a href="#">Apple Store 商店</a></li>
+                        <li><a href="#">Apple Store 商店</a></li>
+                        <li><a href="#">Apple Store 商店</a></li>
+                        <li><a href="#">Apple Store 商店</a></li>
+                        <li><a href="#">Apple Store 商店</a></li>
+                    </ul>
+                </div>
+
+            </section>
+
+        </aside>
+    
         <div class="main">
             <div class="tag"><span>技术支持</span>，享受免费送货、Specialist专家支持、免息分期等服务。</div>
             <ul class="list1">
@@ -97,7 +153,7 @@
             </ul>
         </div>
         <iframe src="./html/footer.html" frameborder = 0 height="480px" width="100%"></iframe>
-        
+        <script src="./js/nav-search.js"></script>
     </div>
 </body>
 </html>
