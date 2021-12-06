@@ -5,6 +5,7 @@
     overflow: hidden;
     box-sizing: border-box;
     padding: 0 22px;
+    margin: 0 auto;
 }
 .footer_top{
     width: 858px;

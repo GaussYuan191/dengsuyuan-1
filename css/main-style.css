@@ -1,4 +1,9 @@
 /* 主页css */
+.container {
+    margin: 0 auto;
+    overflow: hidden;
+    min-width: 1024px;
+}
 .head {
     top: 0;
     position:sticky;
@@ -32,373 +37,163 @@
     text-align: center;
     background: #FFFFFF;
     line-height: 46px;
+    font-size: 12px;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: #666666;
+
 }
-.tag span {
-    color: blue;
+.tag a {
+    color: #537BFF;
 }
 
 .tag span:hover {
     border-bottom: 1px solid blue;
 }
+.list1-main {
+    position: relative;
+    font-family: PingFang SC;
+    display: flex;
+    justify-content: center;
 
-.list1 {
-    height: auto;
 }
-.list1 li:nth-child(1) a {
-    display: inline-block;
+.onclick-list {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
+    height: 100%;
+    z-index: 9;
+}
+.list1-main-content {
+    position: absolute;
+    text-align: center;
+    margin-top: 510px;
+    z-index: 10;
+}
+.list1-main-content > p:nth-child(1) {
+    height: 48px;
+    font-size: 50px;
+    font-weight: bold;
+    color: #FFFFFF;
+    line-height: 48px;
+}
+.list1-main-content > p:nth-child(2) {
+    height: 28px;
+    font-size: 26px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 28px;
+    margin: 15px 0 21px 0;
+}
+.list1-main-content > a:nth-child(3) {
+    height: 17px;
+    font-size: 18px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #1576EE;
+    line-height: 17px;
+}
+.image-wrapper {
+    display: flex;
+    justify-content: center;
+}
+.image-content-main {
+    width: 1920px;
     height: 692px;
     background-size: cover;
     background-image: url("../assets/images/apple-main.png");
     background-repeat: no-repeat;
+    background-position: center;
 }
-.list1 li:nth-child(2) a {
-    display: inline-block;
-    width: 100%;
-    height: 692px;
-    background-size: cover;
-    background-image: url("../assets/images/iPone12ProMax.png");
-    background-repeat: no-repeat;
+.list1-iphone-12pro {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 10px 0;
 }
-
-.list1 li:nth-child(3) a {
-    display: inline-block;
-    width: 100%;
-    height: 692px;
-    background-size: cover;
-    background-image: url("../assets/images/iPhone12mini.png");
-    background-repeat: no-repeat;
-}
-
-.list1-tag-main {
-    font-family: PingFangSC-Regular;
-    font-weight: bold;
+.list1-iphone-12pro-content {
+    position: absolute;
     text-align: center;
+    margin-top: 200px;
+    z-index: 10;
+    margin-left: -400px;
 }
-
-.list1-tag-main p:nth-child(1) {
-    height: 50px;
-    font-size: 50px;
-    font-family: PingFang SC;
-    color: #FFFFFF;  
-    margin-top: 500px;
-    line-height: 50px;
-   
-}
-.list1-tag-main p:nth-child(2) {
-    font-size: 26px;
-    color: #FFFFFF;
-    margin-top: 15px;
-    height: 28px;
-    line-height: 28px;
-}
-.list1-tag-main p:nth-child(3) { 
-    font-size: 18px;
-    height: 18x;
-    line-height: 18px;
-    color: #1576EE; 
-    margin-top: 21px; 
-}
-.list1 li:nth-child(2) {
-    margin: 10px 0;
-}
-.list1-tag-iphone {
-    width: 420px;
-    height: 185px;
-    
-}
-.iphone12promax {
-    margin-top: 216px;
-    margin-left: 546px;
-}
-.iphone12mini {
-    margin-top: 240px;
-    margin-left: 1010px;
-}
-.iphone12mini p:nth-child(1) {
-    margin-left: 66px;
-}
-.iphone12mini p:nth-child(2) {
-    margin-left: 52px;
-}
-.iphone12mini p:nth-child(4) {
-    margin-left: 44px;
-}
-.list1-tag-iphone p:nth-child(1) {
+.list1-iphone-12pro-content > p:nth-child(1) {
     height: 24px;
     font-size: 24px;
     font-family: Helvetica;
     font-weight: 400;
     color: #1D1D1F;
     line-height: 24px;
-    margin-bottom: 16px;
 }
-.iphone12promax p:nth-child(1) {
-    margin-left: 69px;
-    
-}
-.list1-tag-iphone p:nth-child(2) {
-    height: 50px;
+.list1-iphone-12pro-content > p:nth-child(2) {
+    height: 48px;
     font-size: 50px;
     font-family: PingFang SC;
     font-weight: bold;
     color: #1D1D1F;
-    line-height: 50px;
-    margin-bottom: 19px;
-    
+    line-height: 48px;
+    margin: 16px 0 19px 0;
+    margin-left: 50px;
 }
-.iphone12promax p:nth-child(2) {
-    margin-left: 78px;
-    
+.iphone12pro-tag {
+    margin-bottom: 5px;
 }
-.list1-tag-iphone p:nth-child(3) {
-    margin-bottom: 25px;
-}
-.list1-tag-iphone p:nth-child(3) span:nth-child(1) {
-
-    height: 26px;
+.iphone12pro-tag span:nth-child(1) {
+    height: 25px;
     font-size: 26px;
     font-family: PingFang SC;
     font-weight: 400;
     color: #242220;
-    line-height: 26px;
-    margin-right: 10px;
-    
+    line-height: 25px;
+    display: inline-block;
+    margin-right: 5px;
 }
-.list1-tag-iphone p:nth-child(3) span:nth-child(2) {
-
+.iphone12pro-tag span:nth-child(2) {
     height: 28px;
     font-size: 28px;
     font-family: Helvetica;
     font-weight: 400;
     color: #1D1D1F;
     line-height: 28px;
-    
-}
-.list1-tag-iphone p:nth-child(4) span:nth-child(1) {
-
-    height: 18px;
-    font-size: 18px;
-    font-family: PingFang SC;
-    font-weight: 400;
-    color: #1576EE;
-    line-height: 18px;
-    
-}
-.iphone12promax p:nth-child(4) {
-    margin-left: 70px;
-}
-.list1-tag-iphone p:nth-child(4) span:nth-child(2) {
-
-    height: 18px;
-    font-size: 18px;
-    font-family: PingFang SC;
-    font-weight: 400;
-    color: #1576EE;
-    line-height: 18px;
-}
-
-/* 第二部分商品 */
-.list2 {
-    /* width: 1920px; */
-    height: 1711px;
-    display: flex;
-    /* justify-content: center;
-    align-items: center; */
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;  
-    flex: 1;
-    
-}
-.list2 li:nth-child(1) {
-    margin-top: 10px;
-}
-.list2 li:nth-child(2) {
-    margin-top: 10px;
-}
-.footer-text {
-    height: 15px;
-    font-size: 15px;
-    font-family: PingFang SC;
-    font-weight: 400;
-    color: #1576EE;
-    line-height: 15px;
-    display: flex;
-    justify-content: center;
-    margin-top: 19px;
-}
-.footer-text span:nth-child(1) {
-    margin-right: 5px;
-}
-.footer-text span:nth-child(2) {
-    margin-left: 14px;
-}
-.list2 li:nth-child(1)  a {
-    width: 943px;
-    height: 557px;
-    display: block;
-    background: url("../assets/images/watch6.png");
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    display: inline-block;
+    margin-left: 5px;
 
 }
-.watch-img {
-    margin-top: 50px;
-}
-.list2 li:nth-child(1)  a p:nth-child(2) {
-    height: 18px;
-    font-size: 18px;
-    font-family: PingFang SC;
-    font-weight: 400;
-    color: #FFFFFF;
-    line-height: 18px;
-    margin-top: 10px;
-}
-
-.list2 li:nth-child(2) a {
-    width: 943px;
-    height: 557px;
-    display: block;
-    background: url("../assets/images/iPadAir.png");
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.list2 li:nth-child(2) a  p:nth-child(1) {
-    height: 30px;
-    font-size: 40px;
-    font-family: Helvetica;
-    font-weight: 400;
-    color: #1D1D1F;
-    line-height: 30px;
-    text-align: center;
-    margin-top: 60px;
-}
-.list2 li:nth-child(2) a  p:nth-child(2) {
+.cta-links a {
     height: 17px;
     font-size: 18px;
     font-family: PingFang SC;
     font-weight: 400;
-    color: #242220;
+    color: #1576EE;
     line-height: 17px;
-    text-align: center;
-    margin-top: 16px;
+    margin: 20px;
 }
-
-.list2 li:nth-child(3) a {
-    width: 943px;
-    height: 557px;
-    display: block;
-    background: url("../assets/images/iPad.png");
+.image-content-iphone12pro {
+    width: 1920px;
+    height: 692px;
+    background-size: cover;
+    background-image: url("../assets/images/iPone12ProMax.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.list1-iphone-12mini {
+    position: relative;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center; 
 }
-.list2 li:nth-child(3) a p:nth-child(1) {
-    height: 15px;
-    font-size: 15px;
-    font-family: PingFang SC;
-    font-weight: bold;
-    color: #242220;
-    line-height: 15px;
-    margin-top: 372px;
+.list1-iphone-12mini-content {
+    margin-left: -200px;
 }
-.list2 li:nth-child(3) a p:nth-child(2) {
-    height: 67px;
-    font-size: 96px;
-    font-family: 经典行楷繁;
-    font-weight: 400;
-    color: #1D1D1F;
-    line-height: 67px;
-    margin-top: 15px;
-    margin-bottom: 10px;
-}
-.list2 li:nth-child(3) a p:nth-child(3) {
-    height: 19px;
-    font-size: 19px;
-    font-family: PingFang SC;
-    font-weight: 400;
-    color: #242220;
-    line-height: 19px;
-    margin-top: 10px;
-}
-
-.list2 li:nth-child(4) a {
-    width: 943px;
-    height: 557px;
-    display: block;
-    background: url("../assets/images/watchSE.png");
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.list2 li:nth-child(4) a p:nth-child(2) {
-
-    height: 18px;
-    font-size: 18px;
-    font-family: PingFang SC;
-    font-weight: 400;
-    color: #39364A;
-    line-height: 18px;
-    margin-top: 16px;
-}
-
-.list2 li:nth-child(5) a {
-    width: 943px;
-    height: 557px;
-    display: block;
-    background: url("../assets/images/AirPodsPro.png");
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.list2 li:nth-child(5) a p:nth-child(1) {
-    height: 39px;
-    font-size: 39px;
-    font-family: Helvetica;
-    font-weight: 400;
-    color: #FFFFFF;
-    line-height: 39px;
-    margin-top: 61px;
-}
-.list2 li:nth-child(5) a p:nth-child(2) {
-    height: 18px;
-    font-size: 18px;
-    font-family: PingFang SC;
-    font-weight: 400;
-    color: #FFFFFF;
-    line-height: 18px;
-    margin-top: 16px;
-} 
-
-.list2 li:nth-child(6) a {
-    width: 943px;
-    height: 557px;
-    display: block;
-    background: url("../assets/images/AppStore.png");
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.list2 li:nth-child(6) a p:nth-child(1) {
-    height: 39px;
-    font-size: 40px;
-    font-family: Helvetica;
-    font-weight: 400;
-    color: #1D1D1F;
-    line-height: 39px;
-    margin-top: 60px;
-}
-.list2 li:nth-child(6) a p:nth-child(2) {
-    height: 19px;
-    font-size: 18px;
-    font-family: PingFang SC;
-    font-weight: 400;
-    color: #242220;
-    line-height: 19px;
-    margin-top: 7px;
+.image-content-iphone12mini {
+    width: 1920px;
+    height: 692px;
+    background-size: cover;
+    background-image: url("../assets/images/iPhone12mini.png");
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 
