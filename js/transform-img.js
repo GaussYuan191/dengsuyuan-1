@@ -42,7 +42,7 @@ leftBtn.onclick = function() {
     goIndex()
 }
 //开启定时播放图片
-timer = setInterval(() => {
+timer = setInterval(function(){
     rightBtn.onclick()
 }, ms)
 //当鼠标移入的时候，关闭定时器
@@ -51,7 +51,7 @@ content.onmouseover = function() {
 }
 //当鼠标移出的时候，重新开启计时器
 content.onmouseout = function() {
-    timer = setInterval(() => {
+    timer = setInterval(function(){
         rightBtn.onclick()
     }, ms);
 }
