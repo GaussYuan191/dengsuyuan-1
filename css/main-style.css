@@ -1,8 +1,9 @@
 /* 主页css */
 .container {
     margin: 0 auto;
-    overflow: hidden;
-    min-width: 1024px;
+    /* overflow: hidden; */
+    min-width: 1040px;
+
 }
 .head {
     top: 0;
@@ -49,6 +50,14 @@
 
 .tag span:hover {
     border-bottom: 1px solid blue;
+}
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 2048px;
+    margin: 0 auto;
+    overflow: hidden;
 }
 .list1-main {
     position: relative;
@@ -185,7 +194,30 @@
     justify-content: center; 
 }
 .list1-iphone-12mini-content {
-    margin-left: -200px;
+    position: absolute;
+    text-align: center;
+    z-index: 10;
+    margin-top: 218px;
+    margin-left: 400px;
+   
+}
+.list1-iphone-12mini-content > p:nth-child(1) {
+    height: 24px;
+    font-size: 24px;
+    font-family: Helvetica;
+    font-weight: 400;
+    color: #1D1D1F;
+    line-height: 24px;
+}
+.list1-iphone-12mini-content > p:nth-child(2) {
+    height: 48px;
+    font-size: 50px;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: #1D1D1F;
+    line-height: 48px;
+    margin: 16px 0 19px 0;
+    margin-left: 50px;
 }
 .image-content-iphone12mini {
     width: 1920px;
@@ -195,8 +227,272 @@
     background-repeat: no-repeat;
     background-position: center;
 }
+.list2 {
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(100% - 20px);
+    max-width: 1920px;
+    justify-content: space-between;
+    flex-shrink: 0;
+    margin-top: 10px;
+}
+.onclick-list2 {
+    position: absolute;
+    width: calc(50% - 15px);
+    height: inherit;
+    z-index: 9;
+}
+.list2-image-wrapper {
+    position: absolute;
+    width: calc(50% - 15px);
+    display: flex;
+    justify-content: center;
+}
+.list2-watch6 {
+    display: flex;
+    justify-content: center; 
+    width: calc(50% - 5px);
+    height: 557px;
 
+}
+.list2-watch6-content {
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 
+}
+.list2-watch6-content > img {
+    width: 132px;
+    height: 52px;
+    margin: 40px  auto 15px auto;
+}
+.list2-watch6-content > p:nth-child(2) {
+    height: 18px;
+    font-size: 18px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 18px;
+    text-align: center;
+}
+.image-content-watch6 {
+    width: 943px;
+    height: 557px;
+    background-size: cover;
+    background-image: url("../assets/images/watch6.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* ipadAir样式 */
+.list2-ipadAir {
+    display: flex;
+    justify-content: center;
+    width: calc(50% - 5px);
+    height: 557px;
+}
+.list2-ipadAir-content {
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.list2-ipadAir-content p:nth-child(1) {
+    height: 30px;
+    font-size: 40px;
+    font-family: Helvetica;
+    font-weight: 400;
+    color: #1D1D1F;
+    line-height: 30px;
+    margin-top: 60px;
+    
+}
+.list2-ipadAir-content p:nth-child(2) {
+    height: 17px;
+    font-size: 18px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #242220;
+    line-height: 17px;
+    margin-top: 16px;
+}
+.image-content-ipadAir {
+    width: 943px;
+    height: 557px;
+    background-size: cover;
+    background-image: url("../assets/images/iPadAir.png");
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+/* ipad 样式 */
+.list2-ipad {
+    display: flex;
+    justify-content: center;
+    width: calc(50% - 5px);
+    height: 557px;
+    margin: 10px 0 10px 0;
+    align-items: flex-end;
+}
+.list2-ipad-content {
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.list2-ipad-content p:nth-child(1) {
+    height: 15px;
+    font-size: 15px;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: #242220;
+    line-height: 15px;
+    
+}
+.list2-ipad-content p:nth-child(2) {
+    height: 67px;
+    font-size: 96px;
+    font-family: Xingkai-fan;
+    font-weight: 400;
+    color: #1D1D1F;
+    line-height: 67px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.image-content-ipad {
+    width: 943px;
+    height: 557px;
+    background-size: cover;
+    background-image: url("../assets/images/iPad.png");
+    background-repeat: no-repeat;
+    background-position: center;  
+}
+/* watchse样式 */
+.list2-watchse {
+    display: flex;
+    justify-content: center;
+    width: calc(50% - 5px);
+    height: 557px;
+    margin: 10px 0 10px 0;
+}
+.list2-watchse-content {
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.list2-watchse-content > img {
+    width: 132px;
+    height: 52px;
+    margin: 40px  auto 15px auto;
+}
+.list2-watchse-content > p:nth-child(2) {
+    height: 18px;
+    font-size: 18px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #39364A;
+    line-height: 18px;
+    text-align: center;
+}
+.image-content-watchse {
+    width: 943px;
+    height: 557px;
+    background-size: cover;
+    background-image: url("../assets/images/watchSE.png");
+    background-repeat: no-repeat;
+    background-position: center;  
+}
+/* airpodsPro样式 */
+.list2-AirPodsPro {
+    display: flex;
+    justify-content: center;
+    width: calc(50% - 5px);
+    height: 587px;
+}
+.list2-AirPodsPro-content {
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 61px;
+}
+.list2-AirPodsPro-content p:nth-child(1) {
+    height: 29px;
+    font-size: 39px;
+    font-family: Helvetica;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 29px;
+    
+}
+.list2-AirPodsPro-content p:nth-child(2) {
+    height: 17px;
+    font-size: 18px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 28px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+.image-content-AirPodsPro {
+    width: 943px;
+    height: 587px;
+    background-size: cover;
+    background-image: url("../assets/images/AirPodsPro.png");
+    background-repeat: no-repeat;
+    background-position: center;  
+}
+/* App Store样式 */
+.list2-Appstore {
+    display: flex;
+    justify-content: center;
+    width: calc(50% - 5px);
+    height: 587px;
+}
+.list2-Appstore-content {
+    position: absolute;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 61px;
+}
+.list2-Appstore-content p:nth-child(1) {
+    height: 39px;
+    font-size: 40px;
+    font-family: Helvetica;
+    font-weight: 400;
+    color: #1D1D1F;
+    line-height: 39px;
+    
+}
+.list2-Appstore-content p:nth-child(2) {
+    height: 19px;
+    font-size: 18px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #242220;
+    line-height: 19px;
+    margin-top: 7px;
+    margin-bottom: 18px;
+}
+.image-content-Appstore {
+    width: 943px;
+    height: 587px;
+    background-size: cover;
+    background-image: url("../assets/images/AppStore.png");
+    background-repeat: no-repeat;
+    background-position: center;  
+}
 
 
 

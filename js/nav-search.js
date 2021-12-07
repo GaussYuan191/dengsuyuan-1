@@ -7,13 +7,14 @@ let navContent = document.getElementsByClassName("nav-first")[0]
 let resultContent = document.getElementsByClassName("searchresults-list")[0]
 let resultList = Array.from(resultContent.childNodes)
 let searchresultContent = document.getElementById("searchresults")
-let itemList =  resultList.filter((item, index) => {
+
+let itemList =  resultList.filter(function(item, index) {
     return index % 2 != 0
 })
 let searchResults = document.getElementById("searchresults")
 //当输入框输入时，结果区域同步显示输入的内容
 searchInput.oninput = function() {
-    itemList.forEach((item) => {
+    itemList.forEach(function(item)  {
         if (searchInput.value == "") {
             item.childNodes[0].innerText = "Apple Store 商店"
         } else {
@@ -26,17 +27,17 @@ searchInput.oninput = function() {
 //初始化搜索区域
 inputInit = function() {
     searchInput.value =  ""
-    itemList.forEach((item) => {
+    itemList.forEach(function(item) {
         item.childNodes[0].innerHTML = "Apple Store 商店"
     })  
 }
 //给导航栏添加动画
 navAnimation = function() {
     let navList = Array.from(navContent.childNodes)
-    let newList = navList.filter((item, index) => {
+    let newList = navList.filter(function(item, index) {
         return index % 2 != 0
       })
-    newList.forEach((item) => {
+    newList.forEach(function(item) {
         item.className = "nav-animation"
     })
 }
@@ -105,17 +106,18 @@ function preventDefaultForScrollKeys(e) {
 
 // modern Chrome requires { passive: false } when adding event
 var supportsPassive = false;
-try {
-  window.addEventListener(
-    'test',
-    null,
-    Object.defineProperty({}, 'passive', {
-      get: function () {
-        supportsPassive = true;
-      },
-    }),
-  );
-} catch (e) {}
+
+window.addEventListener(
+  'test',
+  null,
+  Object.defineProperty({}, 'passive', {
+    get: function () {
+      console.log("sjdhjshjk")
+      supportsPassive = true;
+    },
+  }),
+);
+
 
 var wheelOpt = supportsPassive ? {passive: false} : false;
 var wheelEvent = 'onwheel' in document.createElement('div') ? 'wheel' : 'mousewheel';
@@ -126,6 +128,7 @@ function disableScroll() {
   window.addEventListener(wheelEvent, preventDefault, wheelOpt); // modern desktop
   window.addEventListener('touchmove', preventDefault, wheelOpt); // mobile
   window.addEventListener('keydown', preventDefaultForScrollKeys, false);
+  window.addEventListener('DOMMouseScroll', preventDefault, false)
 }
 //开启滚动事件
 function runScroll() {
