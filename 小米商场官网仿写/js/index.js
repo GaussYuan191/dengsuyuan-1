@@ -181,7 +181,7 @@ setInterval(function () {
 }, 4000)
 
 /*回顶部*/
-var jAtop = document.getElementById("J_atop")
+let jAtop = document.getElementById("J_atop")
 // 当网页向下滑动 854px 出现"返回顶部" 按钮
 window.onscroll = function () {
   scrollFun()
