@@ -2,13 +2,13 @@
 let jApp = document.getElementById("j-app")
 let appCode = document.querySelector(".app-code")
 jApp.onmousemove = function () {
-    appCode.style.height = "148px";
+    appCode.style.height = "148px"
     console.log(appCode.style.length)
 
     jApp.classList.add("active")
 }
 jApp.onmouseout = function () {
-    appCode.style.height = "0";
+    appCode.style.height = "0"
     jApp.classList.remove("active")
 }
 
