@@ -1,0 +1,356 @@
+/* 注册页面css */
+/* 第一步 */
+.register-root-wrap {
+    background: #F9F9F9;
+    width: 100%;
+    height: auto;
+    min-width: 900px;
+    position: relative;
+    overflow: hidden;
+}
+
+.register-root {
+    width: 854px;
+    height: 565px;
+    background: #FFFFFF;
+    margin: 0 auto;
+    position: relative;
+    margin-top: 213px;
+}
+.register-content {
+    width: 331px;
+    margin: 0 auto;
+}
+.register-content .logo {
+    text-align: center;
+}
+.register-content > .title {
+    height: 29px;
+    font-size: 30px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #000000;
+    line-height: 28px;
+    margin-top: 48px;
+    margin-bottom: 41px;
+    text-align: center;
+}
+.register-addr > div:nth-child(1) {
+    height: 14px;
+    font-size: 14px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #000000;
+    line-height: 14px;
+}
+.select-addr {
+    width: 331px;
+    height: 43px;  
+    margin-top: 7px;
+    margin-bottom: 8px;
+}
+.select-addr .addr-text {
+    padding: 12px;
+    width: 289px;
+    height: 43px;
+    border: 1px solid #D5D5D5;
+    box-sizing: border-box;
+    font-size: 14px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #333333;
+}
+.select-addr .addr-icon {
+    font-size: 28px;
+    width: 42px;
+    height: 43px;
+    border: 1px solid #D5D5D5;
+    border-left: 0;
+    box-sizing: border-box;
+    color: #D5D5D5;
+    padding: 6px;
+}
+.attention {
+    height: 15px;
+    font-size: 14px;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: #666666;
+}
+.phone-num {
+    margin-top: 21px;
+}
+.phone-num > div:nth-child(1) {
+    height: 14px;
+    font-size: 14px;
+    font-family: PingFang SC;
+    font-weight: 400;
+    color: #000000;
+    line-height: 14px;
+}
+.select-phone-num {
+    width: 331px;
+    height: 44px;
+    border: 1px solid #D5D5D5;
+    box-sizing: border-box;
+    margin-top: 7px;
+}
+.select-phone-num .phone-icon {
+    width: 69px;
+    height: 44px;
+    border-right: 1px solid #D5D5D5;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 12px;
+    box-sizing: border-box;
+    
+}
+.phone-icon .phone-number {
+    height: 12px;
+    font-size: 14px;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: #666666;
+    vertical-align: center;
+}
+.phone-icon .number-icon {
+    color: #9D9D9D;
+    font-size: 12px;
+}
+.select-phone-num .phone-text {
+    border: 0;
+    font-size: 16px;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: #333;
+    width: 260px;
+    height: 42px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    
+}
+.phone-text::placeholder {
+    color: #999999;
+}
+.warring {
+    font-size: 14px;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: #FF4242;
+    margin-top: 10px;
+    line-height: 19px;
+    height: 18px;
+    
+ 
+}
+.num-warring {
+    color: #ff6700;
+    font-size: 18px;
+    vertical-align : middle 
+}
+.submit-num {
+    width: 332px;
+    height: 43px;
+    background: #FF6700;
+    border: 0;
+    font-size: 14px;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: #FEFEFE;
+    line-height: 43px;
+    margin-top: 10px;
+}
+.note {
+    font-size: 14px;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: #999999;
+    margin-top: 73px;
+    height: 18px
+   
+}
+.note span:nth-child(2) {
+    line-height: 18px;
+    margin-left: 3px;
+    display: inline-block;
+}
+.note a:nth-child(3) {
+    color: #666666;
+}
+.note a:nth-child(4) {
+    color: #666666;
+}
+.note-check {
+    height: 14px;
+    width: 14px;
+    vertical-align : middle 
+}
+.footer {
+    margin: 0 auto;
+    width: 678px;
+    margin-top: 109px;
+}
+.footer-f {
+    width: 238px;
+    margin: 0 auto;
+}
+.footer-f a {
+    height: 17px;
+    font-size: 14px;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: #999999;
+}
+.footer-f a:hover {
+    text-decoration: underline ;
+}
+.footer-f a:nth-child(1) {
+    height: 17px;
+    font-size: 14px;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: #333333;
+    
+}
+
+.sep {
+    margin: 0 0.3em;
+    color: #999999 ;  
+}
+.mi-copyright {
+    margin-top: 19px;
+    font-size: 14px;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: #999999;
+    text-align: center;
+}
+.submit-click {
+    background-color: rgb(224, 60, 0);
+}
+/* 第二步 */
+
+.register-step-2 .title {
+    width: 304px;
+    height: 40px;
+   
+}
+.register-step-2 .title-f span:nth-child(1) {
+    font-size: 14px;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: #000000;
+}
+.title-f >.tel-number {
+    color: #FF6700 ;
+    font-size: 14px;
+    font-family: PingFang SC;
+    font-weight: bold;
+}
+.register-step-2 .title div:nth-child(2) {
+    font-size: 14px;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: #000000;
+    margin-top: 5px;
+}
+.register-step-2 .ticket-content {
+    width: 332px;
+    height: 43px;
+    border: 1px solid #D5D5D5;
+    box-sizing: border-box;
+    margin-top: 22px;
+    margin-bottom: 18px;
+}
+.register-step-2 .ticket-content .ticket-msg {
+    width: 210px;
+    height: 41px;
+    border: 0;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+.register-step-2 .ticket-content .ticket-ms {
+    height: 42px;
+    width: 115px;
+    font-size: 14px;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: #666666;
+    line-height: 42px;
+
+}
+.ticket-time {
+    width: 40px;
+    display: inline-block;
+    text-align: center;
+}
+.register-step-2 .ticket-ms-active {
+    color: #FF6700 ;
+}
+.register-step-2 .error-msg {
+    height: 15x;
+    font-size: 14px;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: #295EB7;
+    margin-bottom: 7px;
+}
+.register-step-2 .error-msg:hover {
+    text-decoration: underline;
+}
+.register-step-2 .submit-back {
+    width: 332px;
+    height: 43px;
+    border: 1px solid #D5D5D5;
+    margin-top: 10px;
+}
+/* 第三步 */
+.register-step-3 .title .title-f span:nth-child(1){
+    font-size: 14px;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: #666666;
+}
+.register-step-3 .title div:nth-child(2) {
+    font-size: 14px;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: #666666;
+    margin-top: 5px;
+}
+.input-password {
+    width: 332px;
+    height: 43px;
+    border: 1px solid #D5D5D5;
+    margin-top: 18px;
+    padding-left: 15px;
+}
+.register-info {
+    height: 15px;
+    font-size: 14px;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: #666666;
+    margin-top: 12px;
+    margin-bottom: 16px;
+}
+/* 第四部分 */
+.register-step-4 .title {
+    text-align: center;
+    margin-bottom: 97px;
+}
+.register-step-4 .title span:nth-child(1) {
+
+    height: 14px;
+    font-size: 14px;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: #666666;
+
+}
+.register-step-4 .title span:nth-child(2) {
+    color: #FF6700 ;
+    font-size: 14px;
+    font-family: PingFang SC;
+    font-weight: bold;
+}
