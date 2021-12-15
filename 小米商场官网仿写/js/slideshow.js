@@ -32,7 +32,7 @@ for (let i = 0; i < aAll.length; i++) {
         index = this.num
         setA()
         //切换图片
-        move(sli_ul, "left", -liWidth * index, 150, function() {
+        move(sli_ul, "left", -liWidth * index, 100, function() {
 
         })
     }
@@ -65,7 +65,7 @@ function autoChange() {
     timer = setInterval(function() {
         index++
         //执行动画，切换图片
-        move(sli_ul, "left", -liWidth * index, 150, function() {
+        move(sli_ul, "left", -liWidth * index, 100, function() {
             //修改导航按钮
             setA()
         })
@@ -81,7 +81,7 @@ left.onclick = function() {
             sli_ul.style.left = -liWidth * index + "px"
         }
         index--
-        move(sli_ul, "left", -liWidth * index, 150, function() {
+        move(sli_ul, "left", -liWidth * index, 100, function() {
 
         })
         setA()
