@@ -1,0 +1,484 @@
+/* 导航栏样式 */
+.site-topbar {
+    position: relative;
+    font-size: 12px;
+    height: 40px;
+    background: #333;
+}
+.site-topbar-content {
+    width: 1226px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.topbar-nav {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+
+}
+.topbar-nav a {
+    
+    font-weight: 400;
+    color: #C7C7CC;
+    display: inline-block;
+}
+.topbar-nav a:hover {
+    color: #fff;
+}
+/* 下载导航样式 */
+.topbar-nav .topbar-download {
+    position: relative;
+}
+
+.app-code {
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    width: 124px;
+    height: 0;
+    background-color: #fff;
+    text-align: center;
+    margin-left: -55px;
+    overflow: hidden;
+    box-shadow: 0 1px 5px #aaa;
+    font-size: 14px;
+    color: #333;
+    line-height: 1;
+    transition: height .3s;
+    display: block;
+    z-index: 30;
+}
+
+.app-code img {
+    display: block;
+    margin: 18px auto 12px;
+    border: 0;
+}
+
+.topbar-download.active::before {
+    content: "";
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    width: 0;
+    height: 0;
+    margin-left: -8px;
+    border-width: 0 8px 8px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0) rgba(0, 0, 0, 0) #fff;
+}
+/* 导航栏旁边的竖线 */
+.sep {
+    margin: 0 0.3em;
+    color: #424242;  
+}
+/* 右侧购物车样式 */
+.cart-trigger {
+    position: relative;
+    float: right;
+    width: 137px;
+    height: 40px;
+    margin-left: 27px;
+    transition: all .2s;
+    margin: 0 auto;
+   
+
+}
+.navigation-cart {
+    
+    font-weight: 400;
+    color: #C7C7CC;
+    width: 120px;
+    height: 40px;
+    display: inline-block;
+    background: #424242;
+    float: right;
+}
+
+.cart-color {
+    color: #ff6700;
+    background-color: #fff;
+}
+.inconfont-cart {
+    text-align: center;
+    font-size: 18px;
+    display: inline-block;
+    height: 40px;
+    vertical-align: sub;
+    margin-left: 15px;
+}
+.j-menu {
+    position: absolute;
+    right: 0;
+    top: 40px;
+    width: 316px;
+    height: 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .15);
+    overflow: hidden;
+    transition: height .3s;
+    background: #fff;
+    color: #424242;
+    line-height: 99px;
+    text-align: center;
+    z-index: 31;
+}
+.navigation-cart span:nth-child(2) {
+    display: inline-block;
+    line-height: 40px;
+    margin: 0 1px;
+    
+}
+.navigation-cart span:nth-child(3) {
+    display: inline-block;
+    line-height: 40px;
+    margin-left: 1px;
+}
+/* 偏右侧个人信息样式 */
+.topbar-info {
+    position: relative;
+    float: right;
+}
+.topbar-info a{
+    padding: 0 5px;
+    font-size: 12px;
+    color: #b0b0b0;
+    line-height: 40px;
+    text-align: center;
+    display: inline-block;
+}
+.topbar-info a:hover {
+    color: #fff;
+}
+.topbar-info a:nth-child(5) {
+    padding: 0 10px;
+}
+/* 产品导航条部分 */
+.site-header {
+    position: relative;
+    height: 100px;
+    z-index: 20;
+}
+.site-header-content {
+    width: 1226px;
+    margin-right: auto;
+    margin-left: auto;
+    height: 100px;
+}
+/* logo */
+.header-logo {
+    float: left;
+    width: 62px;
+    margin-top: 22px;
+}
+.header-logo .logo {
+    display: block;
+    width: 56px;
+    height: 56px;
+    background-image: url('../assets/images/logo-mi2.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+/* 中间主体 */
+.header-nav {
+    width: 850px;
+}
+
+.header-nav .nav-category {
+    width: 127px;
+    padding-right: 15px;
+    position: relative;
+}
+
+.header-nav .nav-category .header-title {
+    display: block;
+    padding: 26px 0 38px;
+    text-align: right;
+    color: #333;
+}
+
+.header-nav .nav-list>li {
+    float: left;
+}
+
+.header-nav .nav-list {
+    /* position: relative; */
+    z-index: 10;
+    float: left;
+    width: 1100px;
+    height: 88px;
+    margin: 0;
+    padding: 12px 0 0 30px;
+    font-size: 16px;
+}
+
+.header-nav .nav-list .link {
+    display: block;
+    padding: 26px 10px 38px;
+    color: #333;
+    transition: color .2s;
+}
+
+.header-nav .nav-list .link:hover {
+    color: #ff6700;
+}
+
+.site-category {
+    position: absolute;
+    top: 88px;
+    left: -92px;
+    z-index: 21;
+    width: 234px;
+    height: 460px;
+    font-size: 14px;
+}
+
+.site-category .category-list .cat-title {
+    position: relative;
+    display: block;
+    height: 42px;
+    line-height: 42px;
+    padding-left: 30px;
+    color: #fff;
+}
+
+.site-category .cat-ul {
+    height: 420px;
+    border: 0;
+    color: #fff;
+    background: rgba(105, 101, 101, .6);
+    padding: 20px 0;
+}
+
+.site-category .category-list .cat-icon {
+    position: absolute;
+    top: 12px;
+    right: 20px;
+    line-height: 16px;
+    font-size: 16px;
+}
+
+.site-category .category-list.listBcolor {
+    background-color: #ff6700;
+}
+
+.site-category .category-list .commodity {
+    display: none;
+    width: 992px;
+    height: 458px;
+    border: 1px solid #e0e0e0;
+    position: absolute;
+    top: 0;
+    left: 234px;
+    background-color: #fff;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, .18);
+}
+
+.site-category .category-list .comm-3 {
+    width: 795px;
+}
+
+.site-category .category-list .comm-2 {
+    width: 530px;
+}
+
+.category-list .commodity .com-ul {
+    float: left;
+    width: 248px;
+    padding: 2px 0;
+    height: 458px;
+}
+
+.commodity .com-li {
+    width: 265px;
+    height: 76px;
+    float: left;
+}
+
+.commodity .com-li img {
+    vertical-align: middle;
+    float: left;
+    margin-right: 12px;
+}
+
+.commodity .com-li .text {
+    float: left;
+    width: 172px;
+    line-height: 40px;
+    /*规定段落文本不换行*/
+    white-space: nowrap;
+    /* 文本溢出显示省略符号来代表被修剪的文本 */
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+/* nav - js -css */
+
+.site-header .header-nav-menu.menuHeight {
+    height: 229px;
+}
+
+.site-header .header-nav-menu {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    z-index: 24;
+    width: 100%;
+    height: 0;
+    border-top: 1px solid #e0e0e0;
+    background: #fff;
+    overflow: hidden;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, .18);
+    transition: box-shadow .2s, height .3s, -webkit-box-shadow .2s;
+    display: none;
+}
+
+.header-nav-menu ul {
+    height: 229px;
+}
+
+.header-nav-menu .menu-nav {
+    float: left;
+    width: 180px;
+    padding: 35px 12px 0;
+    text-align: center;
+    position: relative;
+}
+
+.header-nav-menu .nav-item {
+    position: relative;
+}
+
+.header-nav-menu .figure {
+    width: 160px;
+    height: 110px;
+    margin: 0 auto 16px;
+    text-align: center;
+}
+
+.header-nav-menu .menu-nav p,
+.menu-nav .title {
+    font-size: 12px;
+}
+
+.header-nav-menu .menu-nav .title {
+    line-height: 20px;
+    color: #333;
+}
+
+.header-nav-menu .menu-nav p {
+    line-height: 20px;
+    color: #ff6700;
+}
+
+.header-nav-menu .container {
+    height: 229px;
+}
+
+#header-title {
+    visibility: hidden;
+    position: relative;
+}
+
+.header-nav-menu .menu-nav em {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    border-right: 1px solid #e0e0e0;
+    height: 90px;
+}
+
+/* 搜索区域 */
+.header-search {
+    width: 296px;
+    margin-top: 25px;
+}
+
+.header-search .search-form {
+    position: relative;
+    width: 296px;
+    height: 50px;
+    z-index: 20;
+}
+
+.header-search .search-form .search-text,
+.search-btn {
+    position: absolute;
+    top: 0;
+    border: 1px solid #e0e0e0;
+    outline: 0;
+    transition: all .2s;
+}
+
+.header-search .search-form .search-text.allBorder,
+.search-btn.allBorder {
+    border: 1px solid #ff6700;
+}
+/* .header-search .search-form .search-text:hover {
+    border: 1px solid #7e7d7d;
+} */
+
+
+.search-form .search-btn {
+    right: 0;
+    z-index: 2;
+    width: 52px;
+    height: 50px;
+    font-size: 20px;
+    line-height: 24px;
+    background: #fff;
+    color: #616161;
+    cursor: pointer;
+}
+
+.search-form .search-text {
+    right: 51px;
+    z-index: 1;
+    width: 223px;
+    height: 48px;
+    padding: 0 10px;
+    font-size: 14px;
+    line-height: 48px;
+}
+
+.search-form .search-btn:hover {
+    background-color: #ff6700;
+}
+/* 设置搜索下拉框 */
+
+.search-down {
+    height: 300px;
+    width: 243px;
+    position: absolute;
+    left: 0px;
+    top: 51px;
+    border: 1px #FF6700 solid;
+    border-top: none;
+    overflow: hidden;
+    z-index: 999;
+    background-color: white;
+}
+
+
+.search-down .down li {
+    float: left;
+    line-height: 1;
+ 
+}
+
+
+.search-down .down a {
+    display: block;
+    height: 30px;
+    line-height: 30px;
+    width: 225px;
+    font-size: 12px;
+    color: #424242;
+    padding-left: 15px;
+}
+
+
+/* 鼠标移入时的样式 */
+
+.search-down .down a:hover {
+    background-color: #FAFAFA;
+}
