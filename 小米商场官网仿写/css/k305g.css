@@ -196,6 +196,10 @@
     float: left;
     margin-right: 6px;
 }
+.detail_much_left:hover {
+    border: 1px solid #FF6A00;
+    color: #FF6A00;
+}
 .shop_detail_much .checked {
     border: 1px solid #FF6A00;
     color: #FF6A00;
@@ -233,6 +237,10 @@
     margin-right: 6px;
     margin-bottom: 10px;
 }
+.detail_color_left:hover {
+    border: 1px solid #FF6A00;
+    color: #FF6A00;
+}
 .shop_detail_color .checked {
     border: 1px solid #FF6A00;
     color: #FF6A00;
@@ -266,6 +274,9 @@
     width: 598px;
     height: 150px;
     box-sizing: border-box;
+}
+.shop_detail_bz1:hover {
+    border: 1px solid #FF6A00;
 }
 .shop_detail_bz1 .shop_detail_button {
     border: 1px solid #ccc;
