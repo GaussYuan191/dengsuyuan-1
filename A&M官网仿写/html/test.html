@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>地址联动</title>
+    <style>
+        .range-slider {
+            position: relative;
+            width: 216px;
+            height: 6px;
+            text-align: center;
+        }
+
+        .range-slider input[type=range] {
+            -webkit-appearance: none;
+            pointer-events: none;
+            padding: 0;
+            position: absolute;
+            left: 0;
+            height: 6px;
+            width: 100%;
+
+            box-sizing: border-box;
+        }
+
+        .range-slider input[type=range]:nth-child(2) {
+            background: rgb(189, 182, 182);
+
+            /* background: -webkit-linear-gradient(#CCAA66, #CCAA66) no-repeat, rgb(189, 182, 182);   */
+        }
+
+
+        .range-slider input[type=range]:focus,
+        .range-slider input[type=range]:active {
+            outline: none;
+
+        }
+
+        .range-slider input[type=range]::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            box-sizing: content-box;
+            width: 8px;
+            height: 16px;
+            background: #757575;
+            border: none;
+            pointer-events: auto;
+            cursor: pointer;
+            position: relative;
+            z-index: 1;
+            margin-top: -5px;
+        }
+
+        .range-slider input[type=range]::-webkit-slider-thumb:active {
+
+            background: #333333 !important;
+        }
+
+        .range-slider input[type=range]::-moz-range-thumb {
+            box-sizing: content-box;
+            width: 8px;
+            height: 16px;
+            background: #757575;
+            border: none;
+            pointer-events: auto;
+            cursor: pointer;
+            position: relative;
+            z-index: 1;
+            margin-top: -5px;
+        }
+
+        .range-slider input[type=range]::-ms-thumb {
+            box-sizing: content-box;
+            width: 8px;
+            height: 16px;
+            background: #757575;
+            border: none;
+            pointer-events: auto;
+            cursor: pointer;
+            position: relative;
+            z-index: 1;
+            margin-top: -5px;
+        }
+
+        .range-slider input[type=range]::-webkit-slider-runnable-track {
+            /* your track styles */
+            width: 216px;
+            height: 6px;
+
+        }
+
+        .range-slider input[type=range]::-moz-range-track {
+            -moz-appearance: none;
+            width: 216px;
+            height: 6px;
+            background: #CCAA66;
+        }
+
+        .range-slider input[type=range]::-ms-track {
+            /* should come after -webkit- */
+            border-color: transparent;
+            /* color: transparent; */
+            width: 216px;
+            height: 6px;
+            background: #CCAA66;
+            /* again your track styles */
+        }
+
+        .range-slider input[type=range]::-ms-fill-upper {
+            background: transparent;
+        }
+
+        .range-slider input[type=range]::-ms-fill-lower {
+            background: transparent;
+        }
+
+        .range-slider input[type=range]::-ms-tooltip {
+            display: none;
+        }
+
+        .price-line {
+            width: 216px;
+            height: 6px;
+            /* z-index: 50; */
+            background: #CCAA66;
+            position: absolute;
+            top: 2px;
+            left: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="range-slider">
+        <input type="range" min="0" max="20000" value=0 id="slider1">
+        <input type="range" min="0" max="20000" value="20000" id="slider2">
+        <div class="price-line"></div>
+    </div>
+
+    <div class="price-text">
+        <p id="price-min">0</p>
+        <p id="price-max">20000</p>
+    </div>
+
+    <script>
+        let priceMin = document.getElementById("slider1")
+        let priceMax = document.getElementById("slider2")
+        let bgColor = document.querySelector(".price-line")
+        let N = 20000
+        let rangeMax
+        let rangeMin
+        priceMax.oninput = function () {
+            document.getElementById('price-max').innerHTML = priceMax.value
+            if (priceMin.value < priceMax) {
+                console.log(priceMax.value, priceMin.value)
+                rangeMax = parseInt((priceMax.value - priceMin.value) / N * 216)
+                console.log(rangeMax)
+                bgColor.style.width = rangeMax + "px"
+            } else {
+                bgColor.style.width = 0
+            }
+        }
+        priceMin.oninput = function () {
+
+            document.getElementById('price-min').innerHTML = priceMin.value
+            console.log(priceMax.value, priceMin.value)
+            rangeMin = parseInt((priceMin.value) / N * 216)
+            console.log(rangeMin)
+            if (priceMin.value < priceMax) {
+                bgColor.style.left = (rangeMin + 2) + "px"
+                rangeMax = parseInt((priceMax.value - priceMin.value) / N * 216)
+                console.log(rangeMax)
+                bgColor.style.width = rangeMax + "px"
+            } else {
+                bgColor.style.width = 0
+            }
+
+        }
+    </script>
+</body>
+
+</html>

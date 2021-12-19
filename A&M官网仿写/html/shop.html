@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>商城页面</title>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/shop.css">
+    <link rel="stylesheet" href="../css/header.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header-wrapper">
+            <div class="header-shop-bg">
+                <div class="header">
+                    <div class="header-img fl">
+                        <img src="../assets/images/logo.png" alt="">
+                    </div>
+                    <div class="header-nav-wrapper fl">
+                        <ul class="header-nav clearfix">
+                            <li ><a href="../index.html"><span class="hover">首页</span> <span>/home</span></a></li>
+                        <li ><a href="#"><span>商城</span> <span>/shop</span></a></li>
+                        <li ><a href="#"><span>关于</span> <span>/about</span></a></li>
+                        <li ><a href="#"><span>联系我们</span> <span>/content</span></a></li>
+                        </ul>
+                    </div>
+                    <div class="user-info fr">
+                        <a href="./shop-bag.html" class="iconfont bag-icon">&#xe61e; </a>
+                        <button class="register">注册</button>
+                        <button class="login">登录</button>
+                    </div>
+                </div>
+                <div class="header-text w">
+                    <p class="title">SHOP</p>
+                </div>
+                <div class="header-search w">
+                    <div class="search-text">
+                        <span class="iconfont search-icon fl">&#xe651;</span>
+                        <input type="text" class="search fl" placeholder="Search">
+                    </div>
+                    
+                </div>
+            </div>
+            
+        </div>
+        <div class="main clearfix">
+            <div class="w select-content clearfix">
+                <div class="select-content-l  fl">
+                    <div class="title">
+                        - 筛选 -
+                    </div>
+                    <div class="select-item">
+                        <div class="title">
+                            有货
+                        </div>
+                        <ul class="select-item-list">
+                            <li>
+                                <input type="radio" name="" id="stock"> 
+                                <label for="stock"></label>
+                                <span>仅显示有货商品</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="select-item">
+                        <div class="title">
+                            商品分类
+                        </div>
+                        <ul class="select-item-list">
+                            <li>
+                                <input type="radio" name="product-type" id="furniture"> 
+                                <label for="furniture"></label>
+                                <span>家具</span>
+                            </li>
+                            <li>
+                                <input type="radio" name="product-type" id="home-textile">
+                                <label for="home-textile"></label>
+                                <span>家纺</span>
+                            </li>
+                            <li>
+                                <input type="radio" name="product-type" id="daily"> 
+                                <label for="daily"></label>
+                                <span>日用</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="select-item">
+                        <div class="title">
+                            使用范围
+                        </div>
+                        <ul class="select-item-list">
+                            <li><input type="radio" name="product-range" id="bedroom"> 
+                                <label for="bedroom"></label>
+                                <span>卧室</span>
+                            </li>
+                            <li><input type="radio" name="product-range" id="cook"> 
+                                <label for="cook"></label>
+                                <span>厨房</span>
+                            </li>
+                            <li><input type="radio" name="product-range" id="saloon">
+                                <label for="saloon"></label>
+                                <span>客厅</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="select-item">
+                        <div class="title">
+                            价格区间
+                        </div>
+                        <div class="select-price">
+                            <div class="range-slider">
+                                <input type="range" min="0" max="20000" value=0 id="slider1">
+                                <input type="range" min="0" max="20000" value="20000" id="slider2">
+                                <div class="price-line"></div>
+                            </div>
+                        
+                            <div class="price-text">
+                                <p id="price-min" class="fl">￥ 0</p>
+                                <p id="price-max" class="fr">￥ 20000</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="select-content-r fl" >
+                    <div class="product-item clearfix">
+                        <img src="../assets/images/product-item-1.png" alt="" class="fl">
+                        <div class="product-text fl">
+                            <div class="title">
+                                <p>原木铲勺</p>
+                                <p>黑胡桃木加工，手工打磨，表面有环保生漆，光滑细腻，重量适中，粗细均匀，没有其他材料比木更能给人自然的感觉。</p>
+                            </div>
+                            <div class="info">
+                                <p>-  材		质：黑胡桃木</p>
+                                <p>-  使用范围：厨房</p>
+                                <p>-  注意事项：禁止放入微波炉、消毒柜</p>
+                            </div>
+                            <div class="product-price">
+                                <del>￥269.00</del>
+                                <span>￥168.00</span>
+                            </div>
+                           
+                            <button class="product-buy">加入购物车</button>
+                            
+                            
+                            
+                        </div>
+                    </div>
+                    <div class="product-item clearfix">
+                        <img src="../assets/images/product-item-2.png" alt="" class="fl">
+                        <div class="product-text fl">
+                            <div class="title">
+                                <p>祛湿防霉干燥剂</p>
+                                <p>黑胡桃木加工，手工打磨，表面有环保生漆，光滑细腻，重量适中，粗细均匀，没有其他材料比木更能给人自然的感觉。</p>
+                            </div>
+                            <div class="info">
+                                <p>-  材		质：黑胡桃木</p>
+                                <p>-  使用范围：厨房</p>
+                                <p>-  注意事项：禁止放入微波炉、消毒柜</p>
+                            </div>
+                            <div class="product-price">
+                                <del>￥218.00</del>
+                                <span>￥128.00</span>
+                            </div>
+                            <button class="product-buy">加入购物车</button>
+                            
+                        </div>
+                    </div>
+                    <div class="product-item clearfix">
+                        <img src="../assets/images/product-item-3.png" alt="" class="fl">
+                        <div class="product-text fl">
+                            <div class="title">
+                                <p>A&M 室内香氛精油</p>
+                                <p>黑胡桃木加工，手工打磨，表面有环保生漆，光滑细腻，重量适中，粗细均匀，没有其他材料比木更能给人自然的感觉。</p>
+                            </div>
+                            <div class="info">
+                                <p>-  材		质：黑胡桃木</p>
+                                <p>-  使用范围：厨房</p>
+                                <p>-  注意事项：禁止放入微波炉、消毒柜</p>
+                            </div>
+                            <div class="product-price">
+                                <del>￥238.00</del>
+                                <span>￥148.00</span>
+                            </div>
+                            <button class="product-buy">加入购物车</button>
+                            
+                        </div>
+                    </div>
+                    <div class="product-item clearfix">
+                        <img src="../assets/images/product-item-4.png" alt="" class="fl">
+                        <div class="product-text fl">
+                            <div class="title">
+                                <p>现代简约木质椅</p>
+                                <p>黑胡桃木加工，手工打磨，表面有环保生漆，光滑细腻，重量适中，粗细均匀，没有其他材料比木更能给人自然的感觉。</p>
+                            </div>
+                            <div class="info">
+                                <p>-  材		质：黑胡桃木</p>
+                                <p>-  使用范围：厨房</p>
+                                <p>-  注意事项：禁止放入微波炉、消毒柜</p>
+                            </div>
+                            <div class="product-price">
+                                <del>￥1899.00</del>
+                                <span>￥1299.00</span>
+                            </div>
+                            <button class="product-buy">加入购物车</button>
+                        </div>
+                    </div>
+                    <div class="product-item clearfix">
+                        <img src="../assets/images/product-item-5.png" alt="" class="fl">
+                        <div class="product-text fl">
+                            <div class="title">
+                                <p>纯色简约打底 T恤</p>
+                                <p>黑胡桃木加工，手工打磨，表面有环保生漆，光滑细腻，重量适中，粗细均匀，没有其他材料比木更能给人自然的感觉。</p>
+                            </div>
+                            <div class="info">
+                                <p>-  材		质：黑胡桃木</p>
+                                <p>-  使用范围：厨房</p>
+                                <p>-  注意事项：禁止放入微波炉、消毒柜</p>
+                            </div>
+                            <div class="product-price">
+                                <del>￥899.80</del>
+                                <span>￥698.80</span>
+                            </div>
+                            <button class="product-buy">加入购物车</button>
+                            
+                        </div>
+                    </div>
+                    <div class="page">
+                        <ul class="page-list">
+                            <li>1</li>
+                            <li>2</li>
+                            <li>3</li>
+                            <li>下一页</li>
+                            <li>最后一页</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="footer-wrapper">
+            <div class="footer ">
+                <div class="w clearfix">
+                    <div class="footer-logo fl">
+                        <img src="../assets/images/logo-footer.png" alt="">
+                    </div>
+                    <div class="footer-text fl">
+                        <ul class="footer-text-list clearfix">
+                    
+                            <li><span>首页</span> <span>/</span></li>
+                            <li><span>商城</span> <span>/</span></li>
+                            <li><span>关于</span> <span>/</span></li>
+                            <li><span>联系我们</span></li>
+                        </ul>
+                        <div class="footer-line">
+    
+                        </div>
+                        <div class="copyright">
+                            Copyright  © 2018  A&M Present  All rights reserved.
+                        </div>
+                    </div>
+                    <div class="footer-icon fr">
+                        <ul class="footer-icon-list">
+                            <li class="iconfont">&#xe887;</li>
+                            <li class="iconfont">&#xe62f;</li>
+                            <li class="iconfont">&#xe633;</li>
+                            <li class="iconfont">&#xe6ee;</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../js/shop.js"></script>
+</body>
+</html>
