@@ -1,0 +1,190 @@
+/* 购物袋页面 */
+.container {
+    min-width: 1200px;
+}
+.header-wrapper {
+    background: #F6F6F6;
+    position: relative; 
+}
+.main {
+    background-color: #f0f2f5;
+    
+}
+.bag-content {
+    margin: 0 auto;
+    width: 900px;
+    padding-top: 64px;
+
+}
+
+.bag-content .bag-title  {
+    height: 44px;
+    font-size: 36px;
+    font-family: STSongti-SC-Bold, STSongti-SC;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.85);
+    line-height: 44px;
+    margin-bottom: 32px;
+
+}
+.bag-text-l p:nth-child(1) {
+    height: 26px;
+    font-size: 18px;
+    font-family: STSongti-SC-Bold, STSongti-SC;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.85);
+    line-height: 26px;
+}
+.bag-text-l p:nth-child(2) span:nth-child(1) {
+    height: 18px;
+    font-size: 12px;
+    font-family: STSongti-SC-Regular, STSongti-SC;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.85);
+    line-height: 18px;
+    margin-bottom: 8px;
+}
+.bag-text-l p:nth-child(2) span:nth-child(2) {
+    height: 18px;
+    font-size: 12px;
+    font-family: STSongti-SC-Regular, STSongti-SC;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.45);
+    line-height: 18px;
+}
+.bag-text-l p:nth-child(3) {
+    height: 18px;
+    font-size: 12px;
+    font-family: STSongti-SC-Bold, STSongti-SC;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.65);
+    line-height: 18px;
+    margin-top: 27px;
+    margin-bottom: 35px;
+} 
+.bag-text-r > p{
+    height: 32px;
+    font-size: 24px;
+    font-family: STSongti-SC-Bold, STSongti-SC;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.85);
+    line-height: 32px; 
+    text-align: right;
+    margin-top: 10px;
+    margin-bottom: 26px;
+}
+.bag-text-r > a {
+    display: block;
+    width: 336px;
+    height: 40px;
+    background: #CCAA66;
+    line-height: 40px;
+    text-align: center;
+    color: #F6F6F6;
+}
+.bag-line {
+    width: 900px;
+    height: 1px;
+    background: #D9D9D9;
+}
+/* 购物袋内容 */
+.bag-list-wrapper {
+    margin-top: 40px;
+}
+.bag-list li {
+    float: left;
+    width: 900px;
+    margin-bottom: 48px;
+}
+.bag-list li:last-child {
+    margin-bottom: 120px;
+}
+.bag-text {
+    padding-left: 24px;
+}
+.bag-text .title {
+    height: 32px;
+    font-size: 24px;
+    font-family: STSongti-SC-Bold, STSongti-SC;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.85);
+    line-height: 32px;
+    
+}
+.bag-text .info {
+    font-size: 15px;
+    font-family: STSongti-SC-Regular, STSongti-SC;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.65);
+    line-height: 24px; 
+    margin-top: 16px;
+    margin-bottom: 16px;
+}
+.bag-text .info p:nth-child(1) {
+   margin-bottom: 10px; 
+}
+.bag-text .deal-num {
+    font-size: 16px;
+    font-family: STSongti-SC-Regular, STSongti-SC;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.45);
+    line-height: 28px;
+}
+.bag-text .deal-num span {
+    display: inline-block;
+
+}
+.num {
+    width: 58px;
+    height: 28px;
+    background-color: #fff;
+    text-align: center;
+    display: inline-block;
+    box-sizing: border-box;
+    border: 0;
+    border-top: 1px solid #D9D9D9;
+    border-bottom: 1px solid #D9D9D9;
+  
+   
+}
+.bag-text-r >a:active {  
+  background: #A78746;
+}
+.bag-text-r >a:hover {
+    
+   background: #D9BC82;
+}
+.bag-hover:hover {
+    border: 1px solid #595959 !important; 
+}
+
+.deal-num button:active {
+    box-shadow: 0px 0px 0px 1px #000000;
+    border: 1px solid #000000 !important;
+}
+.deal-num input:focus {
+    box-shadow: 0px 0px 0px 1px #000000;
+    border: 1px solid #000000 !important; 
+}
+.bag-text .deal-num button {
+    background-color: #fff;
+    width: 28px;
+    height: 28px;
+    text-align: center;
+    border: 1px solid #D9D9D9;
+    box-sizing: border-box;
+}
+.bag-text .deal-num span:last-child {
+    margin-left: 16px;
+    box-sizing: border-box !important;
+    display: inline-block;
+}
+.bag-price {
+    width: 65px;
+    height: 32px;
+    font-size: 18px;
+    font-family: STSongti-SC-Bold, STSongti-SC;
+    font-weight: bold;
+    color: rgba(0, 0, 0, 0.85);
+    line-height: 150px;
+}
