@@ -157,6 +157,10 @@
 .bag-hover:hover {
     border: 1px solid #595959 !important; 
 }
+.delete-hover:hover {
+    border-color: #595959 !important; 
+}
+
 
 .deal-num button:active {
     box-shadow: 0px 0px 0px 1px #000000;
@@ -176,8 +180,10 @@
 }
 .bag-text .deal-num span:last-child {
     margin-left: 16px;
-    box-sizing: border-box !important;
+    
     display: inline-block;
+    border: 1px solid #f0f2f5;
+    box-sizing: border-box !important;
 }
 .bag-price {
     width: 65px;
